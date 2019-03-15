@@ -197,7 +197,7 @@ function mytheme_block_editor_styles() {
 add_action( 'enqueue_block_editor_assets', 'mytheme_block_editor_styles' );
 
 function wpb_add_fonts() {
-    wp_enqueue_style( 'moderno', 'https://use.typekit.net/rxb4cyv.css', false );
+    wp_enqueue_style( 'moderno', 'https://use.typekit.net/axr8qtl.css', false );
 } 
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );

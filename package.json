@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path  --source-map  scss scss/style.scss css/style.css --output-style compressed",
+    "build-css": "node-sass --include-path  --source-map  css scss/style.scss css/style.css --output-style compressed",
     "prefix": "postcss css/style.css --use autoprefixer -r",
     "watch-css": "nodemon -e scss css -x \"npm run build-css\"",
     "start": "livereload",

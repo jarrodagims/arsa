@@ -1,34 +1,4 @@
 .home-module-1 {
     
 
-    .jumbotron {
-        width: 100%;
-
-        .btn-transparent {
-           padding: 0 0;
-           font-size: 17px;
-
-           &:hover {
-               background: transparent;
-           } 
-        }
-    }
-
-    @include media-breakpoint-down(lg) {
-
-
-        .jumbotron {
-            height: 440px;
-            padding: 2em 0;
-        }
-    
-        h1 {
-            font-size: 34px;
-        }
-
-        h2 {
-            font-size: 15px;
-        }
-
-    }    
 }

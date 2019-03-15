@@ -23,7 +23,6 @@ input[type=submit] {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: relative;
-  @include gradient-btn(100);
   @include acumin();
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
@@ -82,16 +81,8 @@ input[type=submit] {
     background: transparent;
     color: #606060;
     overflow: hidden;
-    padding: calc(1em + 1px) 0 1em;
-
-    span {
-      background: $white;
-      transform: translate3d(0, 0, 0);
-      padding: 1em 2em;
-      top: 1px;
-      margin: 1px;
-      -webkit-backface-visibility: inherit;
-    }
+    border: 1px solid $sherpa-brand-primary;
+    color: $white;
 
     &:hover,
   &:focus,
@@ -100,8 +91,8 @@ input[type=submit] {
   &:hover:focus,
   &:hover:active,
   &:hover:visited {
-    background: $sherpa-secondary-color;
-    color: $sherpa-brand-primary;
+    background: $sherpa-brand-primary;
+    color: $white;
   }
 
     background: transparent;

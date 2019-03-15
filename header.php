@@ -63,7 +63,6 @@
 
             <div class="bg-jumbo">
 
-                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                 <div class="jumbotron">
                     <?php
             $sm = new SocialMedia(array('facebook', 'twitter'));
@@ -71,6 +70,28 @@
             $sm->showNetworkButtons();
             $sm->setColorType('singleColor');
             ?>
+
+                    <div class="jumbo-content">
+                        <h1>
+                            <span>915 Siteworks</span>
+
+                            <div>
+                                Spray Foam Insulation
+                            </div>
+                            <em>Installing The Most Energy-Efficient Insulation</em>
+                        </h1>
+
+                        <div>
+
+                            <a href="">
+                                <button class="btn btn-primary">GET A QUOTE</button>
+                            </a>
+
+                            <a href=""><button class="btn btn-outline">CALL US <?php printPhone(); ?></button></a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
