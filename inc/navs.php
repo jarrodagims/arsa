@@ -3,7 +3,8 @@
 	function bs_menu($is_responsive = TRUE, $theme_location = 'primary', $menu_side = 'left', $brand = NULL, $rightNav = NULL) {
     	ob_start();
     	?>
-<nav class="navbar navbar-sherpa navbar-dark  <?php if(!is_front_page()) : ?>navbar-expand-lg<?php endif; ?>">
+<nav
+    class="navbar navbar-sherpa  navbar-expand-lg  navbar-dark  <?php if(!is_front_page()) : ?>navbar-expand-lg<?php endif; ?>">
     <?php
 		if($is_responsive == TRUE) {
 			$collapse_id = rand(1,99);

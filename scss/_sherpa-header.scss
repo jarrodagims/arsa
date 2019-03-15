@@ -1,56 +1,5 @@
-.banner-header {
-    background: url('../img/bg-banner-header.jpg') 0 0 no-repeat;
-    background-size: cover;
-    height: 269px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .col-xs-12 {
-        text-align: center;
-    }
-
-    .navbar-brand {
-        display: block;
-        margin: 0 auto;
-    }
-
-    img {
-        height: 200px;
-        margin: 0 auto;
-    }
-}
-
 .top-header {
-    background: $black;
+    background: rgba(80, 83, 91, 0.56);
+    border-bottom: 1px solid #6D707C;
     color: $white;
-    display: flex;
-    flex-direction: row;
-}
-
-.v-align {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25em 0;
-
-    @include media-breakpoint-down(md) {
-        padding: .5em 0;
-    }
-
-    @include media-breakpoint-down(lg) {
-        padding: 1em 0;
-    }
-}
-
-body.internal {
-    @include media-breakpoint-up(lg) {
-        .top-header {
-            background: $white;
-            color: $black;
-        }
-    }
-
-    .v-align {
-        padding: .75em 0;
-    }
 }

@@ -1,9 +1,5 @@
 .home-module-1 {
-    background: url('../img/bg-hero.jpg') 0 95% no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    position: relative;
+    
 
     .jumbotron {
         width: 100%;
@@ -14,13 +10,12 @@
 
            &:hover {
                background: transparent;
-           }
+           } 
         }
     }
 
     @include media-breakpoint-down(lg) {
-        background: url('../img/bg-hero-mobile.jpg') center 50% no-repeat;
-        background-size: cover;
+
 
         .jumbotron {
             height: 440px;
