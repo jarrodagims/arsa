@@ -200,6 +200,14 @@
     display: flex;
     align-items: center;
     margin-left: 18px;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $sherpa-brand-primary;
+      }
+    }
   }
 }
 
