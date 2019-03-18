@@ -46,7 +46,7 @@
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
 
                         <div class="navbar-right d-lg-flex navbar-nav">
-                            <ul class="nav navbar-right">
+                            <ul class="nav">
                                 <li class="nav-item"><span
                                         class="nav-link"><?=get_option('sherpa_business_address')?></span></li>
                                 <li class="nav-item">|</li>

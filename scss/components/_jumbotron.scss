@@ -1,4 +1,5 @@
 .jumbotron {
+  position: relative;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -20,21 +21,41 @@
   h1 {
     line-height: 1;
     margin-bottom: 0.5em;
-  }
-
-  h1 {
     @include acumin();
     font-style: normal;
     color: $white;
   }
 
-  h1 em {
+  .social-media {
+    position: absolute;
+    right: 90px;
+    top: 20px;
+    display: flex;
 
-  }
+    li {
+     
+      margin-left: 1em;
 
-  h1 > div {
-    font-size: 80px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: #BFC2C1;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: rgba(191, 194, 193, 0.24);
+      }
+    }
   }
+    
 
   .jumbo-content {
     display: flex;
@@ -50,14 +71,20 @@
     }
   }
 
-  .contact-us {
-    margin-bottom: auto;
+  .jumbo-content > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
   }
 
-  .learn-more {
-    margin-top: auto;
-    color: $white;
+  .jumbo-content > div a {
+    margin-right: 20px;
     display: block;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   @include media-breakpoint-down(lg) {

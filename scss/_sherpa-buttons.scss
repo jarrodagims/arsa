@@ -26,6 +26,7 @@ input[type=submit] {
   @include acumin();
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
+  background: $sherpa-brand-primary;
  
 
   &:hover,

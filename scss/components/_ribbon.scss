@@ -1,37 +1,44 @@
 .ribbon {
-  background: url("../img/bg-mid-banner.jpg") center center no-repeat;
-  background-size: cover;
-  height: 228px;
-
-  @include media-breakpoint-down(lg) {
-    background: url("../img/bg-ribbon-sm.jpg") right 0 no-repeat;
-    background-size: cover;
-    height: 346px;
-    display: block;
-  }
-}
-
-.ribbon-2 {
-  @include gradient();
   @include acumin();
-  color: $white;
-  font-size: 44px;
-  padding: 1em 0;
-  letter-spacing: $letterSpacing;
-
-  .col div {
-    margin-top: -3px;
+  
+  .col {
+    justify-content: center;
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 33px;
   }
 
   a {
-    margin-left: 1em;
+    color: #606060;
+    letter-spacing: $letterSpacing;
+
+
+    &:hover {
+      color: $sherpa-brand-primary;
+    }
+  }
+
+  ul {
     display: flex;
+    margin-bottom: 0;
+
+    li {
+      display: flex;
+    }
+
+    li::after {
+      content: "//";
+      display: block;
+      position: relative;
+      width: auto;
+      height: auto;
+      padding: 0 2em;
+    }
+
+    li:last-child {
+      &::after {
+        display: none;
+      }
+    }
   }
-
-
-  @include media-breakpoint-down(lg) {
-      font-size: 24px;
-  }
-
-  
 }
