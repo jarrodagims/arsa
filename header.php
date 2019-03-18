@@ -35,7 +35,7 @@
     <div class="landing-bg">
         <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="v-align row">
                     <div class="col navbar-button text-center">
 
@@ -45,12 +45,13 @@
             ); ?>" /></a>
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
 
-                        <div class="navbar-right d-none d-lg-flex">
-
-
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><?=get_option('sherpa_business_address')?></li>
-                                <li><a href="<?php printPhone(); ?>"><?php printPhone(); ?></a>
+                        <div class="navbar-right d-lg-flex navbar-nav">
+                            <ul class="nav navbar-right">
+                                <li class="nav-item"><span
+                                        class="nav-link"><?=get_option('sherpa_business_address')?></span></li>
+                                <li class="nav-item">|</li>
+                                <li class="nav-item"><a href="<?php printPhone(); ?>"
+                                        class="nav-link"><?php printPhone(); ?></a>
                                 </li>
                             </ul>
                         </div>
