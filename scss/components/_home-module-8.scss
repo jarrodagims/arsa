@@ -1,3 +1,23 @@
 .home-module-8 {
-    
+    position: relative;
+    overflow: hidden;
+
+   &::before {
+       content: '';
+       background: $sherpa-dark-color;
+       width: 100vw;
+       height: 25%;
+       position: absolute;
+       top: 0;
+   }
+
+   h3 {
+       @include big-caslon();
+       font-style: italic;
+       font-size: 17px;
+   }
+
+   img {
+       margin-bottom: 63px;
+   }
 }

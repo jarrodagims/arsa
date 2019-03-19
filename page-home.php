@@ -92,17 +92,22 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col">
+                <img src="<?=IMGURL?>10percentoff.svg" alt="10% Off">
             </div>
-            <div class="col">
-                <h2>Our Location and Who We Serve</h2>
+            <div class="col dark">
+                <div>
+                    <h2>Our Location and Who We Serve</h2>
 
-                <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
-                </h3>
+                    <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
+                    </h3>
 
-                <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve the
-                    entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon, Socorro
-                    and more!
-                </p>
+                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve
+                        the
+                        entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon,
+                        Socorro
+                        and more!
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -145,10 +150,50 @@ Template Name: Home
                     Just give us a call and we’ll come down to the site and provide you with a free and clear estimate
                     on our work.</p>
 
-                <a href="<?=SITEURL?>/contact-us/">CONTACT US</a>
+                <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-outline btn-outline-dark">CONTACT
+                        US</button></a>
             </div>
         </div>
 
+    </div>
+</section>
+
+<section class="home-module-8">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="<?=IMGURL?>lawnmower.jpg" alt="Lawn Care, Mowing
+                    Services">
+                <h2>For Lawn Care, Mowing
+                    Services and More</h2>
+                <h3>915 Siteworks also offers a variety
+                    of landscaping services.</h3>
+                <p>This includes lawn mowing and maintenance, cutting trees and shrubbery, irrigation, grass upkeep, and
+                    more. If you’re looking for quality services for your front lawn or backyard, we assure you — we’ll
+                    get the job done!
+                </p>
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>dig.jpg" alt="Land Preparation Services">
+                <h2>Land Preparation Services</h2>
+                <h3>If you’re cleaning up your property or doing some renovation work, be sure to ask about our dumpster
+                    rental. </h3>
+                <p>Our dumpsters will make the cleanup process easy and convenient. We’ll drop it off and clear it out
+                    as much as you need. We also offer land clearing and grading to prepare a property for your upcoming
+                    construction projects.
+                </p>
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>happy-guy.jpg" alt="Value Proposition">
+                <h2>Value Proposition</h2>
+                <h3>As a locally owned and operated company, we feel a strong connection with the people of El Paso.
+                </h3>
+                <p>For us, it is important that homeowners get the best quality home. Even if we have a small role to
+                    play, we know it’s an important one. The insulation on a home means a lot to its overall
+                    performance, quality, durability, and energy efficiency. We strive to make the process as easy as
+                    possible for you.</p>
+            </div>
+        </div>
     </div>
 </section>
 <?php get_footer();?>

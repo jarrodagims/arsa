@@ -88,7 +88,8 @@
                                 <button class="btn btn-primary">GET A QUOTE</button>
                             </a>
 
-                            <a href=""><button class="btn btn-outline">CALL US <?php printPhone(); ?></button></a>
+                            <a href=""><button class="btn btn-outline btn-outline-dark">CALL US
+                                    <?php printPhone(); ?></button></a>
                         </div>
                     </div>
 

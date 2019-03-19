@@ -1,3 +1,42 @@
 .home-module-5 {
-  
+  overflow: hidden;
+  background: $sherpa-dark-color;
+  color: $white;
+
+  .col:first-child {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    img {
+      width: 329px;
+      height: 329px;
+      margin: 0 auto;
+    }
+
+    &::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 50vw;
+     background: url('../img/bg-construction.jpg') 0 0 no-repeat;
+     z-index: -1;
+     background-size: cover;
+     height: 100%;
+    }
+  } 
+
+  .col:last-child {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    > div {
+      padding-left: 100px;
+    }
+  }
 }
