@@ -101,7 +101,8 @@ Template Name: Home
                     <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
                     </h3>
 
-                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve
+                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also
+                        serve
                         the
                         entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon,
                         Socorro
@@ -118,17 +119,21 @@ Template Name: Home
         <div class="row">
 
             <div class="col">
-                <h2>Providing the Best and Most Effective
-                    Insulation Services Around!</h2>
+                <div>
+                    <h2>Providing the Best and Most Effective
+                        Insulation Services Around!</h2>
 
-                <h3>Every home builder is looking to deliver the best and highest performing home for their client.
-                </h3>
+                    <h3>Every home builder is looking to deliver the best and highest performing home for their client.
+                    </h3>
 
-                <p>IWe help El Paso home builders achieve that mission by specializing and installing the most effective
-                    insulation method around. We believe in this powerful method so strongly that we offer a 10%
-                    discount to home builders on our first job. After you see how effectively we work and the difference
-                    it makes for homeowners, we’re confident you’ll never go back!
-                </p>
+                    <p>IWe help El Paso home builders achieve that mission by specializing and installing the most
+                        effective
+                        insulation method around. We believe in this powerful method so strongly that we offer a 10%
+                        discount to home builders on our first job. After you see how effectively we work and the
+                        difference
+                        it makes for homeowners, we’re confident you’ll never go back!
+                    </p>
+                </div>
 
             </div>
 

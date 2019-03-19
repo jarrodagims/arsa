@@ -1,3 +1,19 @@
 .home-module-6 {
-  
+  padding-top: 127px;
+  padding-bottom: 127px;
+
+   p {
+      margin-bottom: 0;
+    }
+
+    .col {
+      display: flex;
+      align-items: center;
+
+      > div {
+        max-width: 90%;
+      }
+    }
+
+
 }

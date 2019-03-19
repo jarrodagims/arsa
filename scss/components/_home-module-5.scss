@@ -27,16 +27,22 @@
      background-size: cover;
      height: 100%;
     }
+
+   
   } 
 
   .col:last-child {
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    
+
+
     > div {
-      padding-left: 100px;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
     }
+
   }
 }
