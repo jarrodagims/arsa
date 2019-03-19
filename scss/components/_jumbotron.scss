@@ -87,7 +87,18 @@
     }
   }
 
+  .social-media {
+    margin-bottom: 0;
+  }
+
   @include media-breakpoint-down(lg) {
+
+    .social-media {
+      left: 20px;
+      right: auto;
+      top: 20px;
+    }
+
     h2,
     .h2 {
       font-size: 15px;

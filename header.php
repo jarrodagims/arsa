@@ -39,8 +39,8 @@
                 <div class="v-align row">
                     <div class="col navbar-button text-center">
 
-                        <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
-                                src="<?= IMGURL; ?>logo.svg" alt="<?php echo get_bloginfo(
+                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.svg"
+                                alt="<?php echo get_bloginfo(
             'description'
             ); ?>" /></a>
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
@@ -92,8 +92,6 @@
                                     <?php printPhone(); ?></button></a>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>

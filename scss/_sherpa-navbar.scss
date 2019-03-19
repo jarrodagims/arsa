@@ -171,20 +171,24 @@
 }
 
 
-.navbar-nav {
+
+
+@include media-breakpoint-up(lg) {
+  .navbar-nav {
   @include acumin();
 
-  li {
-     margin-left: 32px;
-  }
+    li {
+       margin-left: 32px;
+    }
 
-  li:first-child {
-    margin-left: 0;
-  }
+    li:first-child {
+      margin-left: 0;
+    }
 
-  .nav-link {
-    letter-spacing: 3px;
+    .nav-link {
+      letter-spacing: 3px;
 
+    }
   }
 }
 
@@ -217,4 +221,30 @@
 }
 .navbar-brand img {
   max-width: 150px;
+}
+
+@include media-breakpoint-down(lg) {
+  
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .navbar-brand {
+    flex: 0;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 9999999;
+    width: 100%;
+
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
 }
