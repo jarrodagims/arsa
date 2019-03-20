@@ -15,5 +15,17 @@
       }
     }
 
+  @include media-breakpoint-down(lg) {
+    padding: 0 ;
+    text-align: center;
 
+    .col {
+      justify-content: center;
+    }
+
+    .col:first-child {
+      padding: 2em 15px;
+    }
+
+  }
 }

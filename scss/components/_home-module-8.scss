@@ -20,4 +20,12 @@
    img {
        margin-bottom: 63px;
    }
+
+   @include media-breakpoint-down(lg) {
+      &::before {
+          display: none;
+      }
+
+      text-align: center;
+   }
 }

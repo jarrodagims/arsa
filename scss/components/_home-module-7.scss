@@ -4,5 +4,7 @@
     text-align: center;
     padding: 96px 0;
         
-    
+    @include media-breakpoint-down(lg) {
+        padding: 2em 15px;
+    }
 } 

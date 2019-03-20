@@ -65,7 +65,7 @@ Template Name: Home
 
 
 <section class="home-module-3">
-    <h2>Spray Foam Insulation & Landscaping</h2>
+    <h2>Spray Foam Insulation<br class="br-xs"> & Landscaping</h2>
     <h3>Services Available</h3>
 </section>
 
@@ -101,12 +101,9 @@ Template Name: Home
                     <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
                     </h3>
 
-                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also
-                        serve
-                        the
-                        entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon,
-                        Socorro
-                        and more!
+                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve
+                        the entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon,
+                        Socorro and more!
                     </p>
                 </div>
             </div>
@@ -115,6 +112,8 @@ Template Name: Home
 </section>
 
 <section class="home-module-6">
+    <img class="d-md-none" src="<?=IMGURL ?>2745.jpg" alt="">
+
     <div class="container">
         <div class="row">
 
@@ -126,19 +125,17 @@ Template Name: Home
                     <h3>Every home builder is looking to deliver the best and highest performing home for their client.
                     </h3>
 
-                    <p>IWe help El Paso home builders achieve that mission by specializing and installing the most
-                        effective
-                        insulation method around. We believe in this powerful method so strongly that we offer a 10%
-                        discount to home builders on our first job. After you see how effectively we work and the
-                        difference
-                        it makes for homeowners, we’re confident you’ll never go back!
+                    <p>We help El Paso home builders achieve that mission by specializing and installing the most
+                        effective insulation method around. We believe in this powerful method so strongly that we offer
+                        a 10% discount to home builders on our first job. After you see how effectively we work and the
+                        difference it makes for homeowners, we’re confident you’ll never go back!
                     </p>
                 </div>
 
             </div>
 
             <div class="col">
-                <img src="<?=IMGURL ?>2745.jpg" alt="">
+                <img class="d-none d-md-block" src="<?=IMGURL ?>2745.jpg" alt="">
             </div>
         </div>
 
@@ -167,8 +164,12 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="<?=IMGURL?>lawnmower.jpg" alt="Lawn Care, Mowing
-                    Services">
+                <picture>
+                    <source srcset="<?=IMGURL?>lawnmower.jpg" media="(min-width: 992px)">
+                    <img src="<?=IMGURL?>lawnmower-sm.jpg" alt="Lawn Care, Mowing
+                    Services" />
+                </picture>
+
                 <h2>For Lawn Care, Mowing
                     Services and More</h2>
                 <h3>915 Siteworks also offers a variety
@@ -179,7 +180,13 @@ Template Name: Home
                 </p>
             </div>
             <div class="col">
-                <img src="<?=IMGURL?>dig.jpg" alt="Land Preparation Services">
+
+                <picture>
+                    <source srcset="<?=IMGURL?>dig.jpg" media="(min-width: 992px)">
+                    <img src="<?=IMGURL?>dig-sm.jpg" alt="Lawn Care, Mowing
+                    Services" />
+                </picture>
+
                 <h2>Land Preparation Services</h2>
                 <h3>If you’re cleaning up your property or doing some renovation work, be sure to ask about our dumpster
                     rental. </h3>
@@ -189,7 +196,13 @@ Template Name: Home
                 </p>
             </div>
             <div class="col">
-                <img src="<?=IMGURL?>happy-guy.jpg" alt="Value Proposition">
+
+                <picture>
+                    <source srcset="<?=IMGURL?>happy-guy.jpg" media="(min-width: 992px)">
+                    <img src="<?=IMGURL?>happy-guy-sm.jpg" alt="Lawn Care, Mowing
+                    Services" />
+                </picture>
+
                 <h2>Value Proposition</h2>
                 <h3>As a locally owned and operated company, we feel a strong connection with the people of El Paso.
                 </h3>

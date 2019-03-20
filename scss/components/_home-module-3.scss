@@ -15,4 +15,20 @@
     @include big-caslon();
     font-style: italic;
   }
+
+  @include media-breakpoint-down(lg) {
+    background: url("../img/bg-home-module-3-sm.jpg") center 0 no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+
+    h2 {
+      font-size: 29px;
+      letter-spacing: $letterSpacingSmall;
+    }
+
+    h3 {
+      margin-top: 1em;
+      font-size: 13px;
+    }
+  }
 }

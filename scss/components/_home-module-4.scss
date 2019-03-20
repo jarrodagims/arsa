@@ -10,7 +10,17 @@
     font-size: 23px;
   }
 
-  
 
+  @include media-breakpoint-down(lg) {
+     padding: 2.5em 0;
+     p {
+       margin-bottom: 0;
+     }
+
+     h2 {
+       font-size: 17px;
+       line-height: 1.5;
+     }
+  }
 
 }
