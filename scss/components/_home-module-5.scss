@@ -27,11 +27,9 @@
      background-size: cover;
      height: 100%;
     }
-
   } 
 
   @include media-breakpoint-down(lg) {
-    
    .col:first-child::after {
      display: none;
   }

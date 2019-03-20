@@ -62,7 +62,6 @@
       font-size: 17px;
       letter-spacing: $letterSpacing;
        position: relative;
-       
     }
  
     svg {
@@ -86,6 +85,52 @@
       background: url('../img/bg-icon-3.jpg') 0 0 no-repeat;
       background-size: cover;
       border-right: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .row {
+      flex-direction: row;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .flex-col svg {
+      height: 25px;
+      margin-bottom: 1em;
+    }
+
+    .flex-col {
+      height: 124px;
+      text-align: center;
+      border-bottom: 0;
+      padding: 0 0;
+      border-left: 1px solid rgba(255,255,255,0.5);
+      border-right: 0;
+
+      &:hover {
+        border-bottom: 0;
+       
+      }
+    }
+
+    .flex-col:first-child, .flex-col:last-child, .flex-col:nth-child(2) {
+      background: #50535B;
+    }
+
+    .flex-col::before, .flex-col::after {
+      display: none;
+    }
+
+    .flex-col a {
+      height: auto;
+      font-size: 9px;
+
+      &:hover {
+         background: $sherpa-brand-primary;
+      }
     }
   }
 }

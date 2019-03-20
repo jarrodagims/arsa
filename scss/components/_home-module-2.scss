@@ -13,4 +13,27 @@
     font-size: 21px;
     margin-bottom: 1em;
   }
+  
+
+  @include media-breakpoint-down(lg) {
+    padding: 2.5em 0;
+
+    h2 {
+      font-size: 29px;
+      margin-bottom: 1em;
+      letter-spacing: $letterSpacingSmall;
+    }
+
+    h3 {
+      font-size: 17px;
+      line-height: 1.5;
+      display: block;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+  }
 }
