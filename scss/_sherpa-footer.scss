@@ -1,7 +1,7 @@
 
 
 #footer {
-  
+  padding: 2em 0;
 
   .navbar-brand {
     display: block;
@@ -21,8 +21,29 @@
   .container {
     max-width: 1480px;
   }
- 
 
+  a:first-child {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    text-align: center;
+
+
+    .navbar-brand {
+      margin: 0 auto;
+      width: auto;
+
+      img {
+        height: 50px;
+      }
+    }
+
+    span.title {
+      font-size: 17px;
+    }
+  }
 }
 
 
@@ -54,5 +75,22 @@
 
   @include media-breakpoint-down(lg) {
     font-size: 9px;
+    text-align: center;
+    margin-top: 2em;
+
+    .copyright {
+      text-align: center;
+
+      p {
+        margin: 0 auto;
+        margin-bottom: 0;
+      }
+    }
   }
 } 
+
+
+
+#map {
+  height: 181px;
+}

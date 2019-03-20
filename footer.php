@@ -6,6 +6,9 @@
  *
  */
 ?>
+<div id="map" class="map col">
+
+</div>
 <footer id="footer">
 
     <div class="container">
@@ -40,7 +43,7 @@
                                 SUNDAY: CLOSED</p>
                         </div>
 
-                        <div class="col">
+                        <div class="col flex-col">
                             <a href=""><button class="btn btn-primary">GET A QUOTE</button></a>
                             <a href=""><button class="btn btn-outline">CALL US <?php printPhone(); ?></button></a>
                         </div>
@@ -55,7 +58,7 @@
 <section class="sub-footer">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col d-none d-md-flex">
                 <?php echo non_responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
             <div class="col col-md-3 copyright">

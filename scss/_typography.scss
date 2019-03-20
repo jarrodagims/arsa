@@ -34,9 +34,10 @@ h2 {
   font-weight: 300;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   h2 {
     font-size: 20px;
+    letter-spacing: $letterSpacingSmall;
   }
 
   h3 {

@@ -170,14 +170,18 @@ Template Name: Home
                     Services" />
                 </picture>
 
-                <h2>For Lawn Care, Mowing
-                    Services and More</h2>
-                <h3>915 Siteworks also offers a variety
-                    of landscaping services.</h3>
-                <p>This includes lawn mowing and maintenance, cutting trees and shrubbery, irrigation, grass upkeep, and
-                    more. If you’re looking for quality services for your front lawn or backyard, we assure you — we’ll
-                    get the job done!
-                </p>
+                <div class="extra-padding">
+                    <h2>For Lawn Care, Mowing
+                        Services and More</h2>
+                    <h3>915 Siteworks also offers a variety
+                        of landscaping services.</h3>
+                    <p>This includes lawn mowing and maintenance, cutting trees and shrubbery, irrigation, grass upkeep,
+                        and
+                        more. If you’re looking for quality services for your front lawn or backyard, we assure you —
+                        we’ll
+                        get the job done!
+                    </p>
+                </div>
             </div>
             <div class="col">
 
@@ -187,13 +191,18 @@ Template Name: Home
                     Services" />
                 </picture>
 
-                <h2>Land Preparation Services</h2>
-                <h3>If you’re cleaning up your property or doing some renovation work, be sure to ask about our dumpster
-                    rental. </h3>
-                <p>Our dumpsters will make the cleanup process easy and convenient. We’ll drop it off and clear it out
-                    as much as you need. We also offer land clearing and grading to prepare a property for your upcoming
-                    construction projects.
-                </p>
+                <div class="extra-padding">
+                    <h2>Land Preparation Services</h2>
+                    <h3>If you’re cleaning up your property or doing some renovation work, be sure to ask about our
+                        dumpster
+                        rental. </h3>
+                    <p>Our dumpsters will make the cleanup process easy and convenient. We’ll drop it off and clear it
+                        out
+                        as much as you need. We also offer land clearing and grading to prepare a property for your
+                        upcoming
+                        construction projects.
+                    </p>
+                </div>
             </div>
             <div class="col">
 
@@ -203,13 +212,17 @@ Template Name: Home
                     Services" />
                 </picture>
 
-                <h2>Value Proposition</h2>
-                <h3>As a locally owned and operated company, we feel a strong connection with the people of El Paso.
-                </h3>
-                <p>For us, it is important that homeowners get the best quality home. Even if we have a small role to
-                    play, we know it’s an important one. The insulation on a home means a lot to its overall
-                    performance, quality, durability, and energy efficiency. We strive to make the process as easy as
-                    possible for you.</p>
+                <div class="extra-padding">
+                    <h2>Value Proposition</h2>
+                    <h3>As a locally owned and operated company, we feel a strong connection with the people of El Paso.
+                    </h3>
+                    <p>For us, it is important that homeowners get the best quality home. Even if we have a small role
+                        to
+                        play, we know it’s an important one. The insulation on a home means a lot to its overall
+                        performance, quality, durability, and energy efficiency. We strive to make the process as easy
+                        as
+                        possible for you.</p>
+                </div>
             </div>
         </div>
     </div>
