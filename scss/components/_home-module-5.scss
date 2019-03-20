@@ -28,8 +28,19 @@
      height: 100%;
     }
 
-   
   } 
+
+  @include media-breakpoint-down(lg) {
+    
+   .col:first-child::after {
+     display: none;
+  }
+  
+ 
+  .col:first-child {
+    background: url('../img/bg-construction.jpg') 0 0 no-repeat;
+    background-size: cover;
+  }
 
   .col:last-child {
 
@@ -43,6 +54,6 @@
       align-items: center;
       max-width: 90%;
     }
-
+  }
   }
 }

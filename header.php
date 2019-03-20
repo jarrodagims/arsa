@@ -75,11 +75,9 @@
                     <div class="jumbo-content">
                         <h1>
                             <span>915 Siteworks</span>
-
-                            <div>
-                                Spray Foam Insulation
+                            <div>Spray Foam <br class="br-xs">Insulation
                             </div>
-                            <em>Installing The Most Energy-Efficient Insulation</em>
+                            <em>Installing The Most <br class="br-xs">Energy-Efficient Insulation</em>
                         </h1>
 
                         <div>
