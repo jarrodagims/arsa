@@ -229,8 +229,13 @@
     padding: 0 0;
   }
 
-  .navbar-right li {
+  .navbar-right li:first-child {
+    margin-left: 0;
+  }
+
+  .navbar-right .nav-link {
     font-size: 9px;
+    letter-spacing: $letterSpacing; 
   }
   
   .navbar-brand img {
@@ -239,7 +244,7 @@
 
   .navbar-brand {
     flex: 0; 
-  } 
+  }
 
   .navbar {
     position: absolute;
