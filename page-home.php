@@ -6,7 +6,7 @@ Template Name: Home
 </div>
 
 
-<section class="ribbon d-none d-flex-md">
+<section class="ribbon d-none d-md-flex">
     <div class="container">
         <div class="row">
             <div class="col">
