@@ -20,7 +20,7 @@
                 $thumb_url = $thumb_url_array[0];
 
                 if(empty($thumb_url) || $thumb_url == SITEURL . '/wp-includes/images/media/default.png')  {
-                    $thumb_url = get_stylesheet_directory_uri() . '/img/placeholder.png';
+                    $thumb_url = get_stylesheet_directory_uri() . '/img/placeholder.jpg';
                 }
 
 			endif;

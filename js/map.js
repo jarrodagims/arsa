@@ -175,7 +175,7 @@ function initMap() {
   map.setCenter(myLatLng);
 
   var image = {
-    url: window.location.pathname + "/wp-content/themes/915/img/mapPin.svg",
+    url: window.location.origin + "/wp-content/themes/915/img/mapPin.svg",
     scaledSize: new google.maps.Size(80, 80),
     anchor: new google.maps.Point(40, 40)
   };

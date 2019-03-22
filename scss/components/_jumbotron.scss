@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 778px;
+  height: 688px;
   margin-bottom: 0;
 
   h1 > span {
@@ -24,36 +24,6 @@
     @include acumin();
     font-style: normal;
     color: $white;
-  }
-
-  .social-media {
-    position: absolute;
-    right: 90px;
-    top: 20px;
-    display: flex;
-
-    li {
-     
-      margin-left: 1em;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-
-    a {
-      color: #BFC2C1;
-      border-radius: 50%;
-      width: 34px;
-      height: 34px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:hover {
-        background: rgba(191, 194, 193, 0.24);
-      }
-    }
   }
     
 

@@ -50,7 +50,8 @@
                                 <li class="nav-item"><span
                                         class="nav-link"><?=get_option('sherpa_business_address')?></span></li>
                                 <li class="nav-item">|</li>
-                                <li class="nav-item"><a href="<?php printPhone(); ?>"
+                                <li class="nav-item"><a
+                                        href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"
                                         class="nav-link"><?php printPhone(); ?></a>
                                 </li>
                             </ul>
@@ -60,6 +61,7 @@
             </div>
         </div>
 
+        <?php if(is_front_page()) : ?>
         <section class="home-module-1">
 
             <div class="bg-jumbo">
@@ -82,14 +84,29 @@
 
                         <div>
 
-                            <a href="">
+                            <a href="<?=SITEURL?>/contact-us/">
                                 <button class="btn btn-primary">GET A QUOTE</button>
                             </a>
 
-                            <a href=""><button class="btn btn-outline btn-outline-dark">CALL US
-                                    <?php printPhone(); ?></button></a>
+                            <a
+                                href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><button
+                                    class="btn btn-outline btn-outline-dark">CALL
+                                    US <?php printPhone(); ?></button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <?php endif; ?>
+        <?php if(!is_front_page()) : ?>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"><?php
+        $sm = new SocialMedia(array('facebook', 'twitter'));
+        $sm->setSize('sm');
+        $sm->showNetworkButtons();
+        $sm->setColorType('singleColor');
+        ?></div>
+            </div>
+        </div>
+        <?php endif; ?>

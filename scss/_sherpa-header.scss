@@ -2,4 +2,43 @@
     background: rgba(80, 83, 91, 0.56);
     border-bottom: 1px solid #6D707C;
     color: $white;
+
+    &.internal {
+        background: #50535B;
+    }
+}
+
+.social-media {
+    position: absolute;
+    right: 90px;
+    top: 20px;
+    display: flex;
+
+    li {
+
+      margin-left: 1em;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: #BFC2C1;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: rgba(191, 194, 193, 0.24);
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+        left: 0;
+        right: auto;
+    }
 }

@@ -1,3 +1,49 @@
+@mixin icon-small() {
+  .row {
+      flex-direction: row;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .flex-col svg {
+      height: 25px;
+      margin-bottom: 1em;
+    }
+
+    .flex-col {
+      height: 124px;
+      text-align: center;
+      border-bottom: 0;
+      padding: 0 0;
+      border-left: 1px solid rgba(255,255,255,0.5);
+      border-right: 0;
+
+      &:hover {
+        border-bottom: 0;
+       
+      }
+    }
+
+    .flex-col:first-child, .flex-col:last-child, .flex-col:nth-child(2) {
+      background: #50535B;
+    }
+
+    .flex-col::before, .flex-col::after {
+      display: none;
+    }
+
+    .flex-col a {
+      height: auto;
+      font-size: 9px;
+
+      &:hover {
+         background: $sherpa-brand-primary;
+      }
+    }
+}
+
 .icon-row {
   display: flex;
   @include acumin();
@@ -88,48 +134,48 @@
     }
   }
 
-  @include media-breakpoint-down(lg) {
-    .row {
-      flex-direction: row;
-    }
+  
+}
 
-    &::after {
-      display: none;
-    }
+@include media-breakpoint-down(lg) {
+  .icon-row {
+    @include icon-small();
+  }
+}
 
-    .flex-col svg {
-      height: 25px;
-      margin-bottom: 1em;
-    }
+#sidebar .icon-row {
+  flex-direction: column;
+  padding: 20px;
+  background: #F4F4F4;
+
+  &::after {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
 
     .flex-col {
-      height: 124px;
-      text-align: center;
+      flex: 1;
+      padding-bottom: 0;
       border-bottom: 0;
-      padding: 0 0;
-      border-left: 1px solid rgba(255,255,255,0.5);
-      border-right: 0;
+      margin-bottom: 10px;
 
-      &:hover {
-        border-bottom: 0;
-       
+      &::after {
+        display: none;
+
+      }
+
+      a {
+        height: 191px;
       }
     }
+  }
 
-    .flex-col:first-child, .flex-col:last-child, .flex-col:nth-child(2) {
-      background: #50535B;
-    }
-
-    .flex-col::before, .flex-col::after {
-      display: none;
-    }
-
-    .flex-col a {
-      height: auto;
-      font-size: 9px;
-
-      &:hover {
-         background: $sherpa-brand-primary;
+  @include media-breakpoint-down(lg) {
+    .row {
+      .flex-col a {
+        height: auto;
       }
     }
   }

@@ -22,6 +22,14 @@
     max-width: 1480px;
   }
 
+ a {
+    color: #606060;
+
+    &:hover {
+      color: $sherpa-brand-primary;
+    }
+  }
+
   a:first-child {
     display: inline-block;
     margin-right: 20px;
@@ -29,6 +37,12 @@
 
   @include media-breakpoint-down(lg) {
     text-align: center;
+
+   
+
+    .flex-col {
+      justify-content: center;
+    }
 
 
     .navbar-brand {
