@@ -5,25 +5,48 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 688px;
+  height: 588px;
   margin-bottom: 0;
 
   h1 > span {
     @include montserrat();
     font-weight: 700;
     font-size: 26px;
-    border-bottom: 1px solid $white;
+    position: relative;
     display: block;
     padding-bottom: 0.5em;
     margin-bottom: .5em;
+    letter-spacing: 1px;
+
+    &::after {
+      content: '';
+      border-bottom: 1px solid $white;
+      width: 367px;
+      display: block;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   h1 {
     line-height: 1;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
     @include acumin();
     font-style: normal;
-    color: $white;
+    color: $white; 
+
+    em {
+      font-size: 23px;
+      margin-bottom: 2em;
+    }
+
+    > div {
+      font-size: 80px;
+      margin-bottom: .25em;  
+    }
   }
     
 
@@ -37,7 +60,9 @@
 
     em {
       @include big-caslon();
-      font-size: 23px;
+      font-size: 23px; 
+      letter-spacing: 0; 
+      display: block;
     }
   }
 

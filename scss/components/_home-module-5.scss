@@ -9,6 +9,18 @@
     margin: 0 auto;
   }
 
+  h2 {
+    font-size: 44px;
+    margin-bottom: .5em;
+  }
+
+  h3 {
+    @include big-caslon();
+    font-style: italic;
+    margin-bottom: 1em;
+    font-size: 22px;
+  }
+
 
   .col:first-child {
     position: relative;
@@ -36,6 +48,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    p {
+      margin-bottom: 0;
+    }
 
 
     > div {

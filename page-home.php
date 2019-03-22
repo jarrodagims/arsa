@@ -28,9 +28,12 @@ Template Name: Home
             <div class="col">
                 <h2>Who is 915 Siteworks?</h2>
 
-                <h3>We are a young up-and-coming company ready to take El Paso by insulation.</h3>
+                <h3>We are a young up-and-coming company ready to take<br class="br-md"> El Paso by insulation.</h3>
 
-                <p>Our main initiative is to provide El Paso homebuilders with an innovative and airtight insulation method proven to be the best performing and most eco-friendly on the market. We also provide landscaping services and dumpster rentals for the entire El Paso region.
+                <p>Our main initiative is to provide El Paso homebuilders with an innovative and airtight insulation
+                    method proven to be<br class="br-md"> the best performing and most eco-friendly on the market. We
+                    also provide
+                    landscaping services and dumpster rentals<br class="br-md"> for the entire El Paso region.
                 </p>
             </div>
         </div>
@@ -47,9 +50,13 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>915 Siteworks helps home builders improve the quality of their homes by making them more energy efficient and resistant.</h2>
+                <h2>915 Siteworks helps home builders improve the quality of their<br class="br-md"> homes by making
+                    them more energy
+                    efficient and resistant.</h2>
 
-                <p>In today’s world, everyone is concerned about keeping energy costs down and reducing the carbon footprints. Spray foam technologies improve a home’s performance, making it more efficient, and saving the owner hundreds of dollars in energy bills.
+                <p>In today’s world, everyone is concerned about keeping energy costs down and reducing the carbon
+                    footprints.<br class="br-md"> Spray foam technologies improve a home’s performance, making it more
+                    efficient, and saving the owner hundreds<br class="br-md"> of dollars in energy bills.
                 </p>
             </div>
         </div>
@@ -69,7 +76,9 @@ Template Name: Home
                     <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
                     </h3>
 
-                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve the entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon, Socorro and more!
+                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve
+                        the entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon,
+                        Socorro and more!
                     </p>
                 </div>
             </div>
@@ -114,9 +123,9 @@ Template Name: Home
 
             <div class="col">
                 <h2>FREE On-Site Estimates</h2>
-                <p>Did we mention we offer FREE estimates?
-                    Just give us a call and we’ll come down to the site and provide you with a free and clear estimate
-                    on our work.</p>
+                <h3>Did we mention we offer FREE estimates?</h3>
+                <p>Just give us a call and we’ll come down to the site and provide you with a free and clear estimate on
+                    our work.</p>
 
                 <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-outline btn-outline-dark">CONTACT
                         US</button></a>
