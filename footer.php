@@ -38,12 +38,16 @@
                                     href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>
                             </p>
                         </div>
+                        <div class="col  borders  col-md-1">
+
+                        </div>
                         <div class="col">
                             <span class="title">
                                 Office Hours</span>
                             <p>MONDAY – SATURDAY: 8AM – 5PM<br />
                                 SUNDAY: CLOSED</p>
                         </div>
+                        <div class="col borders  col-md-1"></div>
 
                         <div class="col flex-col">
                             <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">GET A QUOTE</button></a>
@@ -66,11 +70,9 @@
             <div class="col d-none d-md-flex">
                 <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
             </div>
-            <div class="col col-md-3 copyright">
+            <div class="col col-md-4 copyright">
                 <p>&copy; Copyright <?php echo date('Y'); ?> |
-                    <?php echo get_bloginfo( 'name' ); ?>
-                    | Privacy
-                    Policy</p>
+                    <?php echo get_bloginfo( 'name' ); ?></p>
             </div>
         </div>
     </div>

@@ -188,4 +188,8 @@ function initMap() {
   });
 
   marker.setMap(map);
+
+  google.maps.event.addListener(marker, "click", function() {
+    window.open("https://goo.gl/maps/nFBCL6SPmVM2", "_blank");
+  });
 }

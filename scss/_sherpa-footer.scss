@@ -1,7 +1,7 @@
-
-
 #footer {
   padding: 2em 0;
+
+  
 
   .navbar-brand {
     display: block;
@@ -12,6 +12,8 @@
     @include big-caslon();
     font-style: italic;
     font-size: 23px;
+    margin-bottom: 0.5em;
+    display: block;
   }
 
   .flex-zero {
@@ -19,10 +21,10 @@
   }
 
   .container {
-    max-width: 1480px;
+    max-width: 1280px;
   }
 
- a {
+  a {
     color: #606060;
 
     &:hover {
@@ -35,15 +37,55 @@
     margin-right: 20px;
   }
 
+  .col {
+    position: relative;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    .h2 {
+      font-size: 44px;
+      letter-spacing: 2px;
+    }
+
+    .col.borders {
+      position: relative;
+    }
+
+    .col.borders::after {
+      content: "";
+      width: 1px;
+      height: 75%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #6d707c;
+    }
+  }
+
   @include media-breakpoint-down(lg) {
     text-align: center;
 
-   
+    p {
+      font-size: 11px;
+    }
+
+    .h2 {
+      font-size: 24px;
+    }
+
+    img {
+      margin-bottom: 1em;
+    }
 
     .flex-col {
       justify-content: center;
     }
-
 
     .navbar-brand {
       margin: 0 auto;
@@ -60,7 +102,6 @@
   }
 }
 
-
 .sub-footer {
   background: $sherpa-dark-color;
   color: $white;
@@ -68,10 +109,10 @@
   padding: 1em 0;
 
   p {
-      @include roboto();
-      margin-bottom: 0;
-      font-size: 14px;
-    }
+    @include roboto();
+    margin-bottom: 0;
+    font-size: 14px;
+  }
 
   .col {
     display: flex;
@@ -84,7 +125,11 @@
   }
 
   .container {
-    max-width: 1480px;
+    max-width: 1280px;
+  }
+
+  .copyright {
+    justify-content: flex-end;
   }
 
   @include media-breakpoint-down(lg) {
@@ -92,8 +137,11 @@
     text-align: center;
     margin-top: 2em;
 
+  
+
     .copyright {
       text-align: center;
+      justify-content: center;
 
       p {
         margin: 0 auto;
@@ -101,10 +149,12 @@
       }
     }
   }
-} 
-
-
+}
 
 #map {
   height: 181px;
+
+   @include media-breakpoint-down(lg) {
+      height: 118px;
+   }
 }

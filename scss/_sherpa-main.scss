@@ -149,6 +149,10 @@ Animations
   .br-xs {
     display: block;
   }
+
+  .br-md {
+    display: none;
+  }
 }
 
 @include media-breakpoint-up(md) {

@@ -2,18 +2,23 @@
   padding-top: 127px;
   padding-bottom: 127px;
 
-    
+  @include media-breakpoint-up(lg) {
     h2 {
       font-size: 44px;
       margin-bottom: .5em;
     }
+    
+    h3 {
+      font-size: 22px;
+    }
+  }
 
 
   h3 {
     @include big-caslon();
     font-style: italic;
     margin-bottom: 1em;
-    font-size: 22px;
+    
     line-height: 1.5;
   }
 
