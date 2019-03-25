@@ -95,6 +95,7 @@ body #main .container article #sidebar {
     font-size: 27px;
     line-height: 1.35em;
     text-transform: none;
+    @include acumin();
   }
 
   .btn {

@@ -13,7 +13,7 @@
     letter-spacing: $letterSpacing;
 
 
-    &:hover {
+    &:hover, &.active {
       color: $sherpa-brand-primary;
     }
   }

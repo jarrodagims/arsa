@@ -32,20 +32,22 @@
                     <div class="row">
                         <div class="col">
 
-                            <span class="title">Contact</span>
-                            <p><?=get_option('sherpa_business_address')?><br />
-                                <a
-                                    href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>
-                            </p>
+                            <div><span class="title">Contact</span>
+                                <p><?=get_option('sherpa_business_address')?><br />
+                                    <a
+                                        href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>
+                                </p>
+                            </div>
                         </div>
                         <div class="col  borders  col-md-1">
 
                         </div>
                         <div class="col">
-                            <span class="title">
-                                Office Hours</span>
-                            <p>MONDAY – SATURDAY: 8AM – 5PM<br />
-                                SUNDAY: CLOSED</p>
+                            <div><span class="title">
+                                    Office Hours</span>
+                                <p>MONDAY – SATURDAY: 8AM – 5PM<br />
+                                    SUNDAY: CLOSED</p>
+                            </div>
                         </div>
                         <div class="col borders  col-md-1"></div>
 

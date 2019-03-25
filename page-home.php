@@ -10,10 +10,13 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col">
-                <ul class="list-inline list-unstyled">
-                    <li><a href="">LANDSCAPING</a></li>
-                    <li><a href="">INSULATION</a></li>
-                    <li><a href="">DUMPSTER RENTAL</a></li>
+                <ul class="list-inline list-unstyled link-sync">
+                    <li><a href="<?= SITEURL ?>/landscaping-services-el-paso/" id="link-one"
+                            data-target="#box-one">LANDSCAPING</a></li>
+                    <li><a href="<?= SITEURL ?>/spray-foam-insulation-el-paso/" id="link-two"
+                            data-target="#box-two">INSULATION</a></li>
+                    <li><a href="<?= SITEURL ?>/dumpster-rental/" id="link-three" data-target="#box-three">DUMPSTER
+                            RENTAL</a></li>
                 </ul>
             </div>
         </div>
@@ -26,16 +29,19 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>Who is 915 Siteworks?</h2>
+                <div class="extra-padding">
+                    <h2>Who is 915 Siteworks?</h2>
 
-                <h3>We are a young up-and-coming company ready to take<br class="br-md"> El Paso by <span
-                        class="brand">insulation</span>.</h3>
+                    <h3>We are a young up-and-coming company ready to take<br class="br-md"> El Paso by <span
+                            class="brand">insulation</span>.</h3>
 
-                <p>Our main initiative is to provide El Paso homebuilders with an innovative and airtight insulation
-                    method proven to be<br class="br-md"> the best performing and most eco-friendly on the market. We
-                    also provide
-                    landscaping services and dumpster rentals<br class="br-md"> for the entire El Paso region.
-                </p>
+                    <p>Our main initiative is to provide El Paso homebuilders with an innovative and airtight insulation
+                        method proven to be<br class="br-md"> the best performing and most eco-friendly on the market.
+                        We
+                        also provide
+                        landscaping services and dumpster rentals<br class="br-md"> for the entire El Paso region.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -52,16 +58,20 @@ Template Name: Home
         <div class="row">
             <div class="col">
 
-                <h2><span class="brand">915 Siteworks</span> helps home builders improve the<br class="br-xs"> quality
-                    of their<br class="br-md"> homes by making
-                    them more<br class="br-xs"> energy
-                    efficient and resistant.</h2>
+                <div class="extra-padding">
+                    <h2><span class="brand">915 Siteworks</span> helps home builders improve the<br class="br-xs">
+                        quality
+                        of their<br class="br-md"> homes by making
+                        them more<br class="br-xs"> energy
+                        efficient and resistant.</h2>
 
-                <p>
-                    In today’s world, everyone is concerned about keeping energy costs down and reducing the carbon
-                    footprints.<br class="br-md"> Spray foam technologies improve a home’s performance, making it more
-                    efficient, and saving the owner hundreds<br class="br-md"> of dollars in energy bills.
-                </p>
+                    <p>
+                        In today’s world, everyone is concerned about keeping energy costs down and reducing the carbon
+                        footprints.<br class="br-md"> Spray foam technologies improve a home’s performance, making it
+                        more
+                        efficient, and saving the owner hundreds<br class="br-md"> of dollars in energy bills.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -75,14 +85,18 @@ Template Name: Home
             </div>
             <div class="col dark">
                 <div>
-                    <h2>Our Location and<br class="br-xs"> Who We Serve</h2>
+                    <div class="extra-padding">
+                        <h2>Our Location and<br class="br-xs"> Who We Serve</h2>
 
-                    <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
-                    </h3>
+                        <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
+                        </h3>
 
-                    <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also serve
-                        the entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa, Horizon,
-                        Socorro and more!</p>
+                        <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also
+                            serve
+                            the entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa,
+                            Horizon,
+                            Socorro and more!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,7 +111,7 @@ Template Name: Home
         <div class="row">
 
             <div class="col">
-                <div>
+                <div class="extra-padding">
                     <h2>Providing the Best and <br class="br-xs">Most Effective
                         Insulation Services Around!</h2>
 

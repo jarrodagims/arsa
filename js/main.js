@@ -11,6 +11,10 @@
         $(".dropdown-toggle").attr("data-toggle", "dropdown");
       };
 
+      $(".link-sync a").hover(function() {
+        $($(this).data("target")).toggleClass("active");
+      });
+
       //Only do slideshow on small screens
       var timeout;
       window.addEventListener(

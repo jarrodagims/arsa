@@ -1,6 +1,7 @@
 .home-module-8 {
     position: relative;
     overflow: hidden;
+    padding-bottom: 60px;
 
    &::before {
        content: '';
@@ -16,6 +17,7 @@
        font-style: italic;
        font-size: 17px;
        margin-bottom: 1.5em;
+       line-height: 1.5;
    }
 
    img {
@@ -29,6 +31,8 @@
        h2 {
            font-size: 21px;
        }
+
+       
 
       &::before {
           display: none;

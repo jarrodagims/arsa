@@ -57,6 +57,7 @@
      left: 0;
      height: 8px;
      width: 100%;
+     z-index: -1;
   }
 
   .flex-col {
@@ -67,7 +68,7 @@
     border-left: 1px solid $white;
     border-right: 1px solid $white;
     padding-bottom: 8px;
-    border-bottom: 8px solid transparent;
+    border-bottom: 8px solid #d1d1d1;
 
     &::before {
       content: '';
@@ -80,11 +81,11 @@
       top: 0;
     }
 
-    &:hover::before {
+    &:hover::before, &.active::before {
       background: rgba(239, 45, 0, 0.59);
     }
- 
-    &:hover {
+
+    &:hover, &.active {
       border-bottom: 8px solid $sherpa-brand-primary;
     }
 
@@ -107,7 +108,7 @@
       color: $white;
       font-size: 17px;
       letter-spacing: $letterSpacing;
-       position: relative;
+      position: relative;
     }
  
     svg {

@@ -47,9 +47,15 @@
 
   @include media-breakpoint-up(lg) {
 
+    padding: 2em 0 3em;
+
     .h2 {
       font-size: 44px;
       letter-spacing: 2px;
+    }
+
+    p {
+      margin-bottom: 0;
     }
 
     .col.borders {
@@ -59,11 +65,11 @@
     .col.borders::after {
       content: "";
       width: 1px;
-      height: 75%;
+      height: 100%;
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%) translateY(-50%);
       background: #6d707c;
     }
   }

@@ -28,15 +28,15 @@ function sherpa_frontend_scripts()
 
     wp_enqueue_script('plugins_js');
 
-    if (!is_front_page()) {
+    // if (!is_front_page()) {
         wp_register_script('main_js', THEMEURL . '/js/main.js', array('jquery', 'plugins_js'), '1.0.0', true);
         wp_enqueue_script('main_js');
-    }
+    // }
 
-    if (is_front_page()) {
-        wp_register_script('home_js', THEMEURL . '/js/home.js', array('jquery', 'plugins_js'), '1.0.0', true);
-        wp_enqueue_script('home_js');
-    }
+    // if (is_front_page()) {
+    //     wp_register_script('home_js', THEMEURL . '/js/home.js', array('jquery', 'plugins_js'), '1.0.0', true);
+    //     wp_enqueue_script('home_js');
+    // }
 
     wp_register_script('map_js', THEMEURL . '/js/map.js', true);
 
