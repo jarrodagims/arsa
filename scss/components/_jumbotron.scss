@@ -16,7 +16,6 @@
     display: block;
     padding-bottom: 0.5em;
     margin-bottom: .5em;
-    letter-spacing: 1px;
 
     &::after {
       content: '';
@@ -34,18 +33,20 @@
   h1 {
     line-height: 1;
     margin-bottom: 0;
-    @include acumin();
     font-style: normal;
     color: $white; 
 
     em {
       font-size: 23px;
       margin-bottom: 2em;
+      @include chapman();
     }
 
     > div {
+      @include raleway();
       font-size: 80px;
-      margin-bottom: .25em;  
+      font-weight: 500;
+      margin-bottom: .25em;
     }
   }
     

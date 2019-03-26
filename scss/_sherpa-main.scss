@@ -682,10 +682,10 @@ body {
           margin: 0 0;
         }
 
-        &.expander,
-        .expander {
-          margin-bottom: 2.5em;
-        }
+//         &.expander,
+//         .expander {
+//           margin-bottom: 2.5em;
+//         }
 
         @include media-breakpoint-down(xs) {
           &.expander,
@@ -1199,11 +1199,12 @@ body.internal {
 
 .page-template-page-home {
   .navbar-sherpa {
-    outline: none;
+    outline: none; 
     border: none !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
+    background: $sherpa-dark-color;
   }
 }
 

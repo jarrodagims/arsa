@@ -62,8 +62,16 @@
   font-family: "acumin-pro-condensed", sans-serif;
 }
 
+@mixin poppins() {
+  font-family: "Poppins", sans-serif;
+}
+
 @mixin big-caslon() {
   font-family: "big-caslon-fb", serif;
+}
+
+@mixin chapman() {
+  font-family: "chapman", sans-serif;
 }
 
 @mixin gradient() {
@@ -211,7 +219,8 @@ $list2: rgba(219, 75, 68, 1), rgba(206, 45, 70, 1);
     @include svg-arrow(_trim(#cccccc));
   }
 
-  &.expanded {
+  &.expanded,
+  &[aria-expanded="true"] {
     span::after {
       transform: translateY(-50%) rotate(90deg);
     }
@@ -226,7 +235,8 @@ h1,
 h2,
 h3 {
   &.expander,
-  .expander {
+  .expander,
+  &[data-toggle="collapse"] {
     @include expander(#ff0000);
   }
 }

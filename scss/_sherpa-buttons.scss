@@ -12,19 +12,18 @@ input[type=submit] {
 
 .btn,
 .btn-success {
-  padding: 1em 2em;
-  font-size: 15px;
+  padding: .5em 2em;
+  font-size: 12px;
   font-weight: 600;
   color: $white;
   border: 0;
-  border-radius: 0;
+  border-radius: 40px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: relative;
-  @include acumin();
-  letter-spacing: $letterSpacing;
+  @include poppins();
   text-transform: uppercase;
   background: $sherpa-brand-primary;
  
