@@ -17,7 +17,9 @@ h2,
 h3,
 h4 {
   font-weight: 300;
-  @include acumin();
+  @include raleway();
+  color: #726658;
+  letter-spacing: -1px;
 
   strong {
     font-weight: 700;
@@ -62,9 +64,10 @@ h2 {
 
 p {
   line-height: 1.75;
-  @include acumin-condensed();
-  font-size: 17px;
+  @include montserrat();
+  font-size: 15px;
   margin-bottom: 2em;
+  font-weight: 300;
 
   @include media-breakpoint-down(md) {
     font-size: 15px;

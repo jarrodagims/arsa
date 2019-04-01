@@ -1,55 +1,25 @@
 .home-module-6 {
-  padding-top: 127px;
-  padding-bottom: 127px;
+  background: #F1F1F1;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  
+
+  h2 {
+    font-size: 40px;
+  }
+
 
   @include media-breakpoint-up(lg) {
-    h2 {
-      font-size: 44px;
-      margin-bottom: .5em;
-    }
-    
-    h3 {
-      font-size: 22px;
-    }
+   padding: 111px 0;
   }
 
-
-  h3 {
-    @include big-caslon();
-    font-style: italic;
-    margin-bottom: 1em;
-    
-    line-height: 1.5;
-  }
-
-   p {
-      margin-bottom: 0;
-    }
-
-    .col {
-      display: flex;
-      align-items: center;
-
-      > div {
-        max-width: 90%;
-      }
-    }
 
   @include media-breakpoint-down(lg) {
-    padding: 0 ;
-    text-align: center;
-
-    .col > div {
-      max-width: 100%;
-    }
-
-    .col {
-      justify-content: center;
-    }
-
-    .col:first-child {
-      padding: 2em 15px;
-    }
+   
 
   }
 }

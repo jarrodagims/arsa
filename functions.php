@@ -132,7 +132,7 @@ function printPhone() {
         $area = substr($num, 0, 3);
         $first = substr($num, 3, 3);
         $last = substr($num, 6, 4);
-        echo "(". $area . ") " . $first . "-" . $last;
+        echo $area . "." . $first . "." . $last;
     endif;
 }
 
@@ -216,3 +216,6 @@ function override_mce_options($initArray) {
 	return $initArray;
 }
 add_filter('tiny_mce_before_init', 'override_mce_options');
+
+// Disable use XML-RPC
+add_filter( 'xmlrpc_enabled', '__return_false' );

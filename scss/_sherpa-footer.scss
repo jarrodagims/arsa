@@ -1,7 +1,9 @@
 #footer {
   padding: 2em 0;
 
-  
+  .navbar-brand img {
+    max-width: 100%;
+  }
 
   .navbar-brand {
     display: block;
@@ -9,9 +11,8 @@
   }
 
   span.title {
-    @include big-caslon();
-    font-style: italic;
-    font-size: 23px;
+    color: $sherpa-brand-primary;
+    font-size: 14px;
     margin-bottom: 0.5em;
     display: block;
   }
@@ -44,6 +45,16 @@
   .row {
     position: relative;
   }
+
+  p {
+    font-size: 12px;
+    color: #000;
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+
 
   @include media-breakpoint-up(lg) {
 
@@ -114,6 +125,12 @@
   text-align: center;
   padding: 1em 0;
 
+  .social-media {
+    a {
+      color: $white;
+    }
+  }
+
   p {
     @include roboto();
     margin-bottom: 0;
@@ -123,6 +140,19 @@
   .col {
     display: flex;
     align-items: center;
+
+
+    &:first-child {
+      flex: 0;
+    }
+
+    &:nth-child(2) {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    
   }
 
   .navbar {
@@ -136,6 +166,11 @@
 
   .copyright {
     justify-content: flex-end;
+    flex: 0;
+
+    > div {
+      flex-shrink: 0;
+    }
   }
 
   @include media-breakpoint-down(lg) {

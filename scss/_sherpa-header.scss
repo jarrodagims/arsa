@@ -8,10 +8,8 @@
 }
 
 .social-media {
-    position: absolute;
-    right: 90px;
-    top: 20px;
     display: flex;
+    margin-bottom: 0;
 
     li {
 
@@ -20,25 +18,5 @@
       &:first-child {
         margin-left: 0;
       }
-    }
-
-    a {
-      color: #BFC2C1;
-      border-radius: 50%;
-      width: 34px;
-      height: 34px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:hover {
-        background: rgba(191, 194, 193, 0.24);
-        color: $white;
-      }
-    }
-
-    @include media-breakpoint-down(lg) {
-        left: 0;
-        right: auto;
     }
 }

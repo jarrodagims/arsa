@@ -62,12 +62,9 @@
 
         <?php if(is_front_page()) : ?>
         <section class="home-module-1">
-            <div class="container-fluid">
-                <div class="v-align row">
-                    <div class="col navbar-button text-center">
-                        <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
-                    </div>
-                </div>
+
+            <div class=" navbar-button text-center">
+                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
             <div class="bg-jumbo">
 
@@ -82,14 +79,14 @@
                     <div class="jumbo-content">
                         <h1>
                             <span>Health</span>
-                            <div>Product Distributors</div>
-                            <em>Bringing Quality Mexican Products To U.S Customers.</em>
+                            <div>Product Distributor</div>
+                            <em>Bringing Quality Mexican Products To U.S. Customers.</em>
                         </h1>
 
                         <div>
 
                             <a href="<?=SITEURL?>/contact-us/">
-                                <button class="btn btn-primary">GET A QUOTE</button>
+                                <button class="btn btn-primary">CONTACT US</button>
                             </a>
 
                         </div>

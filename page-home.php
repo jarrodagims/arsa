@@ -6,221 +6,231 @@ Template Name: Home
 </div>
 
 
-<section class="ribbon d-none d-md-flex">
-    <div class="container">
+<?php echo get_template_part('template-parts/icon', 'row'); ?>
+
+<section class="home-module-2">
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <ul class="list-inline list-unstyled link-sync">
-                    <li><a href="<?= SITEURL ?>/landscaping-services-el-paso/" id="link-one"
-                            data-target="#box-one">LANDSCAPING</a></li>
-                    <li><a href="<?= SITEURL ?>/spray-foam-insulation-el-paso/" id="link-two"
-                            data-target="#box-two">INSULATION</a></li>
-                    <li><a href="<?= SITEURL ?>/dumpster-rental/" id="link-three" data-target="#box-three">DUMPSTER
-                            RENTAL</a></li>
-                </ul>
+                <div class="extra-padding"><a href="<?=SITEURL?>">
+                        <button class="btn-primary btn">LEARN MORE</button>
+                    </a></div>
+            </div>
+            <div class="col">
+                <div class="extra-padding"><a href="<?=SITEURL?>">
+                        <button class="btn-primary btn">LEARN MORE</button>
+                    </a></div>
             </div>
         </div>
     </div>
 </section>
 
-<?php echo get_template_part('template-parts/icon', 'row'); ?>
-
-<section class="home-module-2">
-    <div class="container">
+<section class="ribbon">
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
+                <img src="<?=IMGURL?>therbal.png" alt="Therbal">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>jaloma.png" alt="Jaloma">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>vitacilina.png" alt="Vitacilina">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>grisi.png" alt="Grisi">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>vicks.png" alt="Vicks">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>picot.png" alt="Picot">
+            </div>
+            <div class="col fibra">
+                <img src="<?=IMGURL?>fibra-kania.png" alt="Fibra Kania">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>eucalin.png" alt="Eucalin">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>del-indio-papago.png" alt="Del Indio Papago">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-module-3">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+            </div>
+
+            <div class="col">
                 <div class="extra-padding">
-                    <h2>Who is 915 Siteworks?</h2>
+                    <h2>What is Arsa Distributing?</h2>
 
-                    <h3>We are a young up-and-coming company ready to take<br class="br-md"> El Paso by <span
-                            class="brand">insulation</span>.</h3>
+                    <p class="blurb">We are a health product distributor, bringing well-loved and traditional products
+                        from
+                        Mexico to the United States.
+                    </p>
 
-                    <p>Our main initiative is to provide El Paso homebuilders with an innovative and airtight insulation
-                        method proven to be<br class="br-md"> the best performing and most eco-friendly on the market.
-                        We
-                        also provide
-                        landscaping services and dumpster rentals<br class="br-md"> for the entire El Paso region.
+                    <p>Our interest lies in improving the quality of life through fine beauty products, natural health
+                        products, and dietary supplements. It’s why we only distribute the best and well-known brands
+                        from
+                        Mexico that have withstood the test of time and generations. Our products range from digestive
+                        health products, health supplements, infusion teas, natural soaps, shampoos, lotions, cough
+                        syrups,
+                        and more.
                     </p>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+
+            <div class="col">
+            </div>
+
+
+            <div class="col badge">
+                <img src="<?=IMGURL ?>badge.svg" alt="Serving the Whole United States">
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col dark">
+                <div class="extra-padding">
+                    <h2>Located in El Paso, Serving the Whole United States</h2>
+
+
+                    <p>
+                        Arsa Distributing has its headquarters by the border between Mexico and the United States. We
+                        are located on the border town of El Paso, Texas but we serve the entire United States.
+                    </p>
+
+                    <p>
+                        Although our headquarters are on the Southwest, we get these products from coast to coast to
+                        stores like Walmart, Lowes, and dozens of local chains, so people everywhere can have access to
+                        the finest Mexican health products.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="col">
+
+            </div>
+
+        </div>
     </div>
+
 </section>
 
-
-<section class="home-module-3">
-    <h2>Spray Foam Insulation<br class="br-xs"> & Landscaping</h2>
-    <h3>Services Available</h3>
-</section>
 
 <section class="home-module-4">
     <div class="container">
         <div class="row">
+
             <div class="col">
-
-                <div class="extra-padding">
-                    <h2><span class="brand">915 Siteworks</span> helps home builders improve the<br class="br-xs">
-                        quality
-                        of their<br class="br-md"> homes by making
-                        them more<br class="br-xs"> energy
-                        efficient and resistant.</h2>
-
-                    <p>
-                        In today’s world, everyone is concerned about keeping energy costs down and reducing the carbon
-                        footprints.<br class="br-md"> Spray foam technologies improve a home’s performance, making it
-                        more
-                        efficient, and saving the owner hundreds<br class="br-md"> of dollars in energy bills.
-                    </p>
+                <div class="box">
+                    <img src="<?=IMGURL?>health-product-distributor.svg" alt="Health Product Distributor" />
                 </div>
+            </div>
+
+            <div class="col col-md-1"></div>
+
+            <div class="col">
+                <h2>
+                    What We Do
+                </h2>
+
+                <p class="blurb">
+                    We specialize in importing the products and distributing them through major and smaller retailers
+                    and supermarkets across the U.S.
+                </p>
+
+                <p>
+                    We also sell to local shops and family owned stores. While we also sell to the individual consumer,
+                    we focus on getting our products on the shelves of your favorite local store so you can have easy
+                    access to these wonderful items at your convenience.
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 
 <section class="home-module-5">
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="<?=IMGURL?>10percentoff.svg" alt="10% Off">
-            </div>
-            <div class="col dark">
-                <div>
-                    <div class="extra-padding">
-                        <h2>Our Location and<br class="br-xs"> Who We Serve</h2>
+                <div class="extra-padding">
+                    <h2>
+                        Value Proposition
+                    </h2>
 
-                        <h3>Our office is located in east El Paso at 1150 Burgundy, Suite B.
-                        </h3>
+                    <p>As a health product distributor, we believe in the power of every one of these products to change
+                        people’s live for the better. We know that traditional Mexican products have a special meaning
+                        for
+                        people and often a cultural significance. Many of these products have been around for
+                        generations
+                        and form part of the classical canon of
+                        household products.</p>
 
-                        <p>We currently serve and operate within a 200-mile radius of the Sun City. This means we also
-                            serve
-                            the entire El Paso region including its surrounding areas of Las Cruces, Santa Teresa,
-                            Horizon,
-                            Socorro and more!</p>
-                    </div>
+                    <h2>
+                        See What We Have To Offer
+                    </h2>
+
+                    <p>
+                        Find out more about the signature products we carry and import: the Eucalin Cough Syrups, Fiber,
+                        and
+                        Natural Teas. Visit our over the counter pages, health and beauty section, or natural
+                        supplements
+                        page. You will find an array of products for different conditions, illnesses, or nutritional
+                        needs.
+                        Find something for the needs of your entire family, from speciality creams and shampoos, to cold
+                        medicine, to infused teas, and soaps.
+                    </p>
                 </div>
+
+
+            </div>
+
+            <div class="col col-md-1"></div>
+
+            <div class="col">
+                <img src="<?=IMGURL?>aisle.jpg" alt="">
             </div>
         </div>
     </div>
 </section>
 
 <section class="home-module-6">
-    <img src="<?=IMGURL ?>2745-sm.jpg" alt="Insulation Services El Paso" class="d-md-none">
-
 
     <div class="container">
+
         <div class="row">
-
             <div class="col">
-                <div class="extra-padding">
-                    <h2>Providing the Best and <br class="br-xs">Most Effective
-                        Insulation Services Around!</h2>
 
+                <h2>
+                    Contact Us For All Your Health Product Needs
+                </h2>
 
-
-
-                    <h3>Every home builder is looking to deliver the best and highest performing home for their client.
-                    </h3>
-
-                    <p>We help El Paso home builders achieve that mission by specializing and installing the most
-                        effective insulation method around. We believe in this powerful method so strongly that we offer
-                        a 10% discount to home builders on our first job. After you see how effectively we work and the
-                        difference it makes for homeowners, we’re confident you’ll never go back!
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="col">
-                <img class="d-none d-md-block" src="<?=IMGURL ?>2745.jpg" alt="">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="home-module-7">
-    <div class="container">
-        <div class="row">
-
-            <div class="col">
-                <h2>FREE On-Site Estimates</h2>
-                <h3>Did we mention we offer FREE estimates?</h3>
-                <p>Just give us a call and we’ll come down to the site and provide you with a free and clear estimate on
-                    our work.
+                <p>
+                    Arsa Distributing is a health product distributor that delivers across the U.S. Questions about how
+                    it all works? Want to know more about how to get traditional Mexican products into your store?
+                    Looking to buy some of these products directly? Contact us today. We are located in El Paso, Texas
+                    at 500 West Overland Suite 250N 79901. Contact us for more information at <?php printPhone(); ?>.
                 </p>
 
-                <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-outline btn-outline-dark">CONTACT
-                        US</button></a>
             </div>
-        </div>
 
-    </div>
-</section>
-
-<section class="home-module-8">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <picture>
-                    <source srcset="<?=IMGURL?>lawnmower.jpg" media="(min-width: 992px)">
-                    <img src="<?=IMGURL?>lawnmower-sm.jpg" alt="Lawn Care, Mowing
-                    Services" />
-                </picture>
-
-                <div class="extra-padding">
-                    <h2>For Lawn Care, Mowing<br class="br-xs">
-                        Services and More</h2>
-                    <h3>915 Siteworks also offers a variety
-                        of <a href="<?=SITEURL?>/landscaping/">landscaping services</a>.</h3>
-                    <p>This includes lawn mowing and maintenance, cutting trees and shrubbery, irrigation, grass upkeep,
-                        and more. If you’re looking for quality services for your front lawn or backyard, we assure you
-                        — we’ll get the job done!
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-
-                <picture>
-                    <source srcset="<?=IMGURL?>dig.jpg" media="(min-width: 992px)">
-                    <img src="<?=IMGURL?>dig-sm.jpg" alt="Lawn Care, Mowing
-                    Services" />
-                </picture>
-
-                <div class="extra-padding">
-                    <h2>Land Preparation Services</h2>
-
-
-
-
-                    <h3>If you’re cleaning up your property or doing some renovation work, be sure to ask about our
-                        <a href="<?=SITEURL?>/dumpster-rental-el-paso/">dumpster rental</a>.</h3>
-                    <p>Our dumpsters will make the cleanup process easy and convenient. We’ll drop it off and clear it
-                        out as much as you need. We also offer <a
-                            href="<?=SITEURL?>/land-clearing-services-el-paso/">land clearing</a> and <a
-                            href="<?=SITEURL?>/land-grading-services-el-paso/">grading</a> to prepare a property for
-                        your
-                        upcoming construction projects.</p>
-                </div>
-            </div>
-            <div class="col">
-
-                <picture>
-                    <source srcset="<?=IMGURL?>happy-guy.jpg" media="(min-width: 992px)">
-                    <img src="<?=IMGURL?>happy-guy-sm.jpg" alt="Lawn Care, Mowing
-                    Services" />
-                </picture>
-
-                <div class="extra-padding">
-                    <h2>Value Proposition</h2>
-                    <h3>As a locally owned and operated company, we feel a strong connection with the people of El Paso.
-                    </h3>
-                    <p>For us, it is important that homeowners get the best quality home. Even if we have a small role
-                        to play, we know it’s an important one. The insulation on a home means a lot to its overall
-                        performance, quality, durability, and energy efficiency. We strive to make the process as easy
-                        as possible for you.</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>
+
 <?php get_footer();?>

@@ -12,8 +12,8 @@ input[type=submit] {
 
 .btn,
 .btn-success {
-  padding: .5em 2em;
-  font-size: 12px;
+  padding: 1em 4em;
+  font-size: 13px;
   font-weight: 600;
   color: $white;
   border: 0;
@@ -36,7 +36,7 @@ input[type=submit] {
   &:hover:active,
   &:hover:visited {
     color: $white;
-//     background: $sherpa-brand-primary;
+    background: $sherpa-secondary-color;
 
 //     &::after {
 //       background: $sherpa-brand-primary;

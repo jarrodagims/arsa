@@ -1,34 +1,46 @@
 .home-module-3 {
   text-align: center;
-  background: url("../img/bg-home-module-3.jpg") center center no-repeat;
+  background: url("../img/mmmmmmaaaaaaaah.jpg") center top no-repeat;
   background-size: cover;
-  padding: 152px 0;
-  color: $white;
- 
-  h2 {
-    font-size: 80px;
-    margin-bottom: 10px;
+  color: $white; 
+  text-align: left;
+  color: #606060;
+
+  .badge {
+    display: flex;
+    flex-direction: column;
   }
 
-  h3 {
-    font-size: 23px;
-    @include big-caslon();
-    font-style: italic;
+  img {
+    height: 403px;
+    width: 403px;
+    margin-left: auto;
   }
+
+  p.blurb {
+    @include serif();
+    font-style: italic;
+    font-size: 23px;
+    line-height: 1.5; 
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 40px;
+    letter-spacing: -.5px;
+  }
+
+  .extra-padding {
+    padding: 180px 0;
+  }
+ 
 
   @include media-breakpoint-down(lg) {
-    background: url("../img/bg-home-module-3-sm.jpg") center 0 no-repeat;
+    background: url("../img/mmmmmmaaaaaaaah-sm.jpg") center 0 no-repeat;
     background-size: cover;
     padding: 20px 0;
-
-    h2 {
-      font-size: 29px;
-      letter-spacing: $letterSpacingSmall;
-    }
-
-    h3 {
-      margin-top: 1em;
-      font-size: 13px;
-    }
   }
 }

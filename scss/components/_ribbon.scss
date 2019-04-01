@@ -6,6 +6,15 @@
     display: flex;
     padding-top: 23px;
     padding-bottom: 23px;
+    @include dropshadow();
+
+    &.fibra {
+      background: #a1d700;
+    }
+  }
+
+  img {
+    align-self: center;
   }
 
   a {
@@ -17,6 +26,7 @@
       color: $sherpa-brand-primary;
     }
   }
+  
 
   ul {
     display: flex;

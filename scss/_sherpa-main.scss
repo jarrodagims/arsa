@@ -1199,12 +1199,15 @@ body.internal {
 
 .page-template-page-home {
   .navbar-sherpa {
+    padding-top: 20px;
+    padding-bottom: 20px;
     outline: none; 
     border: none !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     background: $sherpa-dark-color;
+   
   }
 }
 
@@ -2076,6 +2079,10 @@ ul.expand {
 
 .dark {
   color: $white;
+
+  h2, h3 {
+    color: $white;
+  }
 }
 
 .flex-col {

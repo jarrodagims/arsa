@@ -8,26 +8,15 @@
   height: 588px;
   margin-bottom: 0;
 
+ 
   h1 > span {
-    @include montserrat();
-    font-weight: 700;
-    font-size: 26px;
-    position: relative;
-    display: block;
-    padding-bottom: 0.5em;
+    background: url('../img/health-product.svg') center 0 no-repeat;
+    background-size: contain;
+     display: block;
+     position: relative;
+     height: 54px;
+    text-indent: -99999px;
     margin-bottom: .5em;
-
-    &::after {
-      content: '';
-      border-bottom: 1px solid $white;
-      width: 367px;
-      display: block;
-      height: 1px;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
   h1 {
@@ -36,17 +25,12 @@
     font-style: normal;
     color: $white; 
 
-    em {
-      font-size: 23px;
-      margin-bottom: 2em;
-      @include chapman();
-    }
-
     > div {
       @include raleway();
-      font-size: 80px;
-      font-weight: 500;
+      font-size: 86px;
+      font-weight: 600;
       margin-bottom: .25em;
+      letter-spacing: -1px;
     }
   }
     
@@ -60,10 +44,11 @@
     height: 100%;
 
     em {
-      @include big-caslon();
-      font-size: 23px; 
+      font-size: 29px; 
       letter-spacing: 0; 
+       margin-bottom: 2em;
       display: block;
+      @include serif();
     }
   }
 
@@ -85,6 +70,13 @@
 
   .social-media {
     margin-bottom: 0;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    a {
+      color: $white;
+    }
   }
 
   @include media-breakpoint-down(lg) {

@@ -24,6 +24,7 @@
   .navbar-nav {
     > li > a {
       color: $sherpa-navbar-default-link-color;
+      letter-spacing: 1px;
 
       &:hover,
       &:focus {
@@ -197,6 +198,7 @@
   line-height: 1;
   vertical-align: middle;
   color: $sherpa-dark-color;
+  margin-bottom: 1em;
 
   em {
     @include chapman();
@@ -213,6 +215,7 @@
       color: $sherpa-dark-color;
       font-size: 30px;
       @include poppins();
+      letter-spacing: 3px;
 
       &:hover {
         color: $sherpa-brand-primary;
