@@ -3,7 +3,12 @@
  background-size: cover;
 
  @include media-breakpoint-down(lg) {
-     background: url('../img/bg-hero-mobile.jpg') 0 0 no-repeat;
-     background-size: cover;
+     background: none;
+
+    .bg-jumbo {
+         margin-top: 60px;
+         background: url('../img/bg-hero-mobile.jpg') 0 0 no-repeat;
+         background-size: cover;
+    }
  }
 }

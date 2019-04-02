@@ -52,7 +52,26 @@
   
 
   @include media-breakpoint-down(lg) {
-    padding: 2.5em 0;
+    padding: 0;
+
+
+    .col {
+      height: 155px;
+
+       &:first-child {
+        background: url('../img/therbal-sm.jpg') 0 0 no-repeat;
+        background-size: cover;
+      }
+
+      &:last-child {
+        background: url('../img/eucalin-sm.jpg') 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .btn {
+      display: none;
+    }
 
     h2 {
       font-size: 29px;

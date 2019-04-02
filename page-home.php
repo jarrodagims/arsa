@@ -203,10 +203,11 @@ Template Name: Home
             <div class="col col-md-1"></div>
 
             <div class="col">
-                <img src="<?=IMGURL?>aisle.jpg" alt="">
+                <img class="d-none d-lg-block" src="<?=IMGURL?>aisle.jpg" alt="">
             </div>
         </div>
     </div>
+    <img class="d-lg-none" src="<?=IMGURL?>bg-aisle-sm.jpg" />
 </section>
 
 <section class="home-module-6">

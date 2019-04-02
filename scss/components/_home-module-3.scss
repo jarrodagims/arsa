@@ -39,8 +39,45 @@
  
 
   @include media-breakpoint-down(lg) {
-    background: url("../img/mmmmmmaaaaaaaah-sm.jpg") center 0 no-repeat;
-    background-size: cover;
     padding: 20px 0;
+    background: none;
+    background: #F1F1F1;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    .dark h2 {
+      color: #726658;
+    }
+
+    p.blurb {
+
+    }
+
+    p {
+      color: #606060;
+    }
+
+    .badge {
+      background: url("../img/mmmmmmaaaaaaaah-sm.jpg") center 0 no-repeat;
+      background-size: cover;
+      padding: 5em 0;
+    }
+
+    img {
+      height: 183px;
+      width: 183px;
+      margin: 0 auto;
+    }
+
+    .extra-padding {
+      padding: 2em 0 0;
+      text-align: center;
+    }
   }
 }

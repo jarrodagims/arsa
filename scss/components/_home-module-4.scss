@@ -27,7 +27,26 @@
   }
 
   @include media-breakpoint-down(lg) {
-    
+    padding: 2em 0;
+
+    text-align: center;
+
+    .box {
+      margin-bottom: 2em;
+    }
+
+    .box img {
+      max-width: 100%;
+    }
+
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 
 }

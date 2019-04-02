@@ -44,14 +44,15 @@
                                 alt="<?php echo get_bloginfo(
             'description'
             ); ?>" /></a>
-
                         <div class="navbar-right d-lg-flex navbar-nav">
                             <ul class="nav">
-                                <li class="nav-item"><span
-                                        class="nav-link"><em><?=get_option('sherpa_business_address')?></em></span></li>
-                                <li class="nav-item"><a
+                                <li class="nav-item menu-item directions">
+                                    <a href="<?=SITEURL?>/contact-us/"><span
+                                            class="nav-link"><em><?=get_option('sherpa_business_address')?></em></span></a>
+                                </li>
+                                <li class="nav-item menu-item contact"><a
                                         href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"
-                                        class="nav-link"><?php printPhone(); ?></a>
+                                        class="nav-link"><span><?php printPhone(); ?></span></a>
                                 </li>
                             </ul>
                         </div>
@@ -64,6 +65,7 @@
         <section class="home-module-1">
 
             <div class=" navbar-button text-center">
+
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
             <div class="bg-jumbo">

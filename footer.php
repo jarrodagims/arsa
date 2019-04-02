@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div><span class="title">
+                            <div><span class="title  d-none d-lg-block">
                                     &nbsp;</span>
                                 <p> <strong>T:</strong> <a
                                         href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a><br />
@@ -55,20 +55,35 @@
                         </div>
 
                         <div class="col">
-                            <span class="title">&nbsp;</span>
+                            <span class="title d-none d-lg-block">&nbsp;</span>
                             <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">CONTACT US</button></a>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="container d-lg-none">
+        <div class="row">
+            <div class="col">
+                <?php
+            $sm = new SocialMedia(array('facebook', 'twitter', 'linkedin'));
+            $sm->setSize('sm');
+            $sm->showNetworkButtons();
+            $sm->setColorType('singleColor');
+            ?>
+            </div>
         </div>
     </div>
 </footer>
 <section class="sub-footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col"><?php
+            <div class="col d-none d-flex-lg"><?php
             $sm = new SocialMedia(array('facebook', 'twitter', 'linkedin'));
             $sm->setSize('sm');
             $sm->showNetworkButtons();
