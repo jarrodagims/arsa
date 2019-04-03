@@ -2,10 +2,9 @@ function initMap() {
   // Styles a map in night mode.
 
   var myLatLng = {
-    lat: 31.7064225,
-    lng: -106.2940927
+    lat: 31.755486209841546,
+    lng: -106.49318334999998
   };
-
   var map = new google.maps.Map(document.getElementById("map"), {
     center: myLatLng,
     zoom: 15,

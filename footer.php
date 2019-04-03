@@ -33,8 +33,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div><span class="title  d-none d-lg-block">
-                                    &nbsp;</span>
+                            <div><span class="title  d-none d-lg-block">&nbsp;</span>
                                 <p> <strong>T:</strong> <a
                                         href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a><br />
 
@@ -83,7 +82,7 @@
 <section class="sub-footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col d-none d-flex-lg"><?php
+            <div class="col d-none d-lg-flex"><?php
             $sm = new SocialMedia(array('facebook', 'twitter', 'linkedin'));
             $sm->setSize('sm');
             $sm->showNetworkButtons();

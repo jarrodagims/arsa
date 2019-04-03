@@ -148,15 +148,16 @@
     align-items: center;
 
 
-    &:first-child {
-      flex: 0;
-    }
+//     &:first-child {
+//       flex: 0;
+//     }
 
     &:nth-child(2) {
       flex: 1;
       display: flex;
       justify-content: center;
       text-align: center;
+      flex-basis: 50%;
     }
     
   }
@@ -172,7 +173,7 @@
 
   .copyright {
     justify-content: flex-end;
-    flex: 0;
+//     flex: 0;
 
     > div {
       flex-shrink: 0;

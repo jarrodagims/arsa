@@ -225,7 +225,8 @@ Template Name: Home
                     Arsa Distributing is a health product distributor that delivers across the U.S. Questions about how
                     it all works? Want to know more about how to get traditional Mexican products into your store?
                     Looking to buy some of these products directly? Contact us today. We are located in El Paso, Texas
-                    at 500 West Overland Suite 250N 79901. Contact us for more information at <?php printPhone(); ?>.
+                    at 500 West Overland Suite 250N 79901. Contact us for more information at <a
+                        href="<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>.
                 </p>
 
             </div>
