@@ -2073,7 +2073,7 @@ ul.expand {
 
 
 
-body.page-template-page-products {
+body.post-type-archive-product {
 
   .icon-row { 
     background: #F4F4F4;
@@ -2086,7 +2086,7 @@ body.page-template-page-products {
       fill: $sherpa-tertiary-color;
     }
 
-    a:hover {
+    a:hover { 
       svg path {
         fill: $white;
       }

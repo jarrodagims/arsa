@@ -1,4 +1,4 @@
-<?php if(is_page('products')): ?>
+<?php if(is_archive('products') || is_single('product')): ?>
 <div class="internal-banner">
 
     <div class="bg-jumbo">
