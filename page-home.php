@@ -69,20 +69,17 @@ Template Name: Home
 
             <div class="col">
                 <div class="extra-padding">
-                    <h2>What is Arsa Distributing?</h2>
+                    <h2>Who is Arsa Distributing?</h2>
 
-                    <p class="blurb">We are a health product distributor, bringing well-loved and traditional products
-                        from
-                        Mexico to the United States.
+                    <p class="blurb">We are a health product distributor who brings traditional and fan-favorite
+                        products from Mexico to the United States.
                     </p>
 
-                    <p>Our interest lies in improving the quality of life through fine beauty products, natural health
-                        products, and dietary supplements. It’s why we only distribute the best and well-known brands
-                        from
-                        Mexico that have withstood the test of time and generations. Our products range from digestive
-                        health products, health supplements, infusion teas, natural soaps, shampoos, lotions, cough
-                        syrups,
-                        and more.
+                    <p>Our interest lies in improving the quality of life through medicinal items, beauty products,
+                        natural health products, and dietary supplements. It’s why we only distribute the best and
+                        well-known brands from Mexico that have withstood the test of time and several generations. Our
+                        products range from digestive health products, health supplements, infusion teas, natural soaps,
+                        shampoos, lotions, cough syrups, and more.
                     </p>
                 </div>
             </div>
@@ -103,18 +100,19 @@ Template Name: Home
         <div class="row">
             <div class="col dark">
                 <div class="extra-padding">
-                    <h2>Located in El Paso, Serving the Whole United States</h2>
+                    <h2>Located in El Paso, Serving the Entire United States</h2>
 
 
                     <p>
-                        Arsa Distributing has its headquarters by the border between Mexico and the United States. We
-                        are located on the border town of El Paso, Texas but we serve the entire United States.
+                        Arsa Distributing’s headquarters is located at the border between Mexico and the United States
+                        in El Paso, TX.
                     </p>
 
                     <p>
-                        Although our headquarters are on the Southwest, we get these products from coast to coast to
-                        stores like Walmart, Lowes, and dozens of local chains, so people everywhere can have access to
-                        the finest Mexican health products.
+                        Although we are located in El Paso, we serve the entire U.S., shipping products cross country in
+                        a fast and efficient manner. Being located in the Southwest allows us to get products from coast
+                        to coast. We deliver to major stores such as Walmart and Lowes as well as dozens of local
+                        chains. Shoppers everywhere can have access to the finest Mexican health products around.
                     </p>
                 </div>
 
@@ -145,18 +143,18 @@ Template Name: Home
 
             <div class="col">
                 <h2>
-                    What We Do
+                    We Specialize in Importing and Distributing Products to Vendors
                 </h2>
 
                 <p class="blurb">
-                    We specialize in importing the products and distributing them through major and smaller retailers
-                    and supermarkets across the U.S.
+                    At Arsa Distributing, we work with small and large retailers as well as supermarkets across the U.S.
+                    to bring them the products their customers enjoy.
                 </p>
 
                 <p>
-                    We also sell to local shops and family owned stores. While we also sell to the individual consumer,
-                    we focus on getting our products on the shelves of your favorite local store so you can have easy
-                    access to these wonderful items at your convenience.
+                    We also distribute to local shops and family owned stores. While we also sell directly to the
+                    individual consumer, our main focus is getting our products on the shelves of your favorite local
+                    store so you can have quick and easy access to these wonderful items at your convenience!
                 </p>
             </div>
         </div>
@@ -170,30 +168,26 @@ Template Name: Home
             <div class="col">
                 <div class="extra-padding">
                     <h2>
-                        Value Proposition
+                        Our Value Proposition
+
                     </h2>
 
-                    <p>As a health product distributor, we believe in the power of every one of these products to change
-                        people’s live for the better. We know that traditional Mexican products have a special meaning
-                        for
-                        people and often a cultural significance. Many of these products have been around for
-                        generations
-                        and form part of the classical canon of
-                        household products.</p>
+                    <p>As a health product distributor, we believe in the power of every one of these products. They are
+                        made with ingredients that have the ability to change people’s lives for the better. We also
+                        know that traditional Mexican products have a special meaning for people and a cultural
+                        significance. Many of these products have been around for generations and form part of the
+                        classical canon of household products.</p>
 
                     <h2>
-                        See What We Have To Offer
+                        Learn More About What We Have To Offer
                     </h2>
 
                     <p>
-                        Find out more about the signature products we carry and import: the Eucalin Cough Syrups, Fiber,
-                        and
-                        Natural Teas. Visit our over the counter pages, health and beauty section, or natural
-                        supplements
-                        page. You will find an array of products for different conditions, illnesses, or nutritional
-                        needs.
-                        Find something for the needs of your entire family, from speciality creams and shampoos, to cold
-                        medicine, to infused teas, and soaps.
+                        The signature products we carry and import include the Eucalin cough syrups, fiber, and natural
+                        teas. Be sure to check out our over-the-counter page for more information on medicinal products,
+                        health and beauty, and natural supplements. You will find an array of products. Find something
+                        for the needs of your entire family too, from specialty creams and shampoos to cold medicines,
+                        infused teas, and soaps. We have something for everyone!
                     </p>
                 </div>
 
@@ -222,10 +216,9 @@ Template Name: Home
                 </h2>
 
                 <p>
-                    Arsa Distributing is a health product distributor that delivers across the U.S. Questions about how
-                    it all works? Want to know more about how to get traditional Mexican products into your store?
-                    Looking to buy some of these products directly? Contact us today. We are located in El Paso, Texas
-                    at 500 West Overland Suite 250N 79901. Contact us for more information at <a
+                    If you have questions about our services or would like more information on how to get traditional
+                    Mexican products into your store, please contact us today. We are located at 500 West Overland,
+                    Suite 250N, in El Paso, Texas and can be reached at <a
                         href="<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>.
                 </p>
 

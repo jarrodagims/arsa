@@ -1,3 +1,43 @@
+@mixin therbal-small() {
+  padding: 0;
+
+  .col {
+    height: 155px;
+
+     &:first-child {
+      background: url('../img/therbal-sm.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+
+    &:last-child {
+      background: url('../img/eucalin-sm.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .btn {
+    display: none;
+  }
+
+  h2 {
+    font-size: 29px;
+    margin-bottom: 1em;
+    letter-spacing: $letterSpacingSmall;
+  }
+
+  h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    display: block;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
 .home-module-2 {
   text-align: center;
 
@@ -52,43 +92,23 @@
   
 
   @include media-breakpoint-down(lg) {
-    padding: 0;
+    @include therbal-small();
+  }
+}
 
 
-    .col {
-      height: 155px;
+#sidebar {
+  
+  .home-module-2 {
+    @include therbal-small();
 
-       &:first-child {
-        background: url('../img/therbal-sm.jpg') 0 0 no-repeat;
-        background-size: cover;
+    .row {
+      flex-direction: column;
+
+      .col {
+        flex: 1;
       }
-
-      &:last-child {
-        background: url('../img/eucalin-sm.jpg') 0 0 no-repeat;
-        background-size: cover;
-      }
-    }
-
-    .btn {
-      display: none;
-    }
-
-    h2 {
-      font-size: 29px;
-      margin-bottom: 1em;
-      letter-spacing: $letterSpacingSmall;
-    }
-
-    h3 {
-      font-size: 17px;
-      line-height: 1.5;
-      display: block;
-    }
-
-    p {
-      font-size: 15px;
-      margin-bottom: 0;
-      line-height: 1.5;
     }
   }
+
 }

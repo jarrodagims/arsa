@@ -54,6 +54,15 @@
                                         href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"
                                         class="nav-link"><span><?php printPhone(); ?></span></a>
                                 </li>
+                                <?php if(!is_front_page()) : ?>
+                                <li><?php
+        $sm = new SocialMedia(array('facebook', 'twitter'));
+        $sm->setSize('sm');
+        $sm->showNetworkButtons();
+        $sm->setColorType('singleColor');
+        ?>
+                                </li>
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </div>
@@ -65,7 +74,6 @@
         <section class="home-module-1">
 
             <div class=" navbar-button text-center">
-
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
             <div class="bg-jumbo">
@@ -96,16 +104,11 @@
                 </div>
             </div>
         </section>
-        <?php endif; ?>
-        <?php if(!is_front_page()) : ?>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col"><?php
-        $sm = new SocialMedia(array('facebook', 'twitter'));
-        $sm->setSize('sm');
-        $sm->showNetworkButtons();
-        $sm->setColorType('singleColor');
-        ?></div>
+        <?php else: ?>
+        <section class="home-module-1">
+            <div class=" navbar-button text-center">
+                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
-        </div>
+
+        </section>
         <?php endif; ?>

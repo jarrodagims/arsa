@@ -1,6 +1,61 @@
+@mixin ribbon-small() {
+  .row {
+    flex-direction: row;
+
+    .col {
+      flex-basis: 20%;
+      padding: 1em 1em;
+
+      img {
+        max-height: 32px;
+      }
+
+      &:nth-child(1) {
+        order: 0;
+        flex-basis: 15%;
+      }
+
+      &:nth-child(2) {
+        order: 8;
+      }
+
+      &:nth-child(3) {
+        order: 2;
+        flex-basis: 30%;
+      }
+
+      &:nth-child(4) {
+        order: 9;
+      }
+
+      &:nth-child(5) {
+        order: 5;
+        flex-basis: 15%;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+      }
+
+      &:nth-child(7) {
+        order: 8;
+      }
+
+      &:nth-child(8) {
+        order: 2;
+        flex-basis: 33%;
+      }
+
+      &:nth-child(9) {
+        order: 9;
+      }
+    }
+  }
+}
+
 .ribbon {
   @include acumin();
-  
+
   .col {
     justify-content: center;
     display: flex;
@@ -21,12 +76,11 @@
     color: #606060;
     letter-spacing: $letterSpacing;
 
-
-    &:hover, &.active {
+    &:hover,
+    &.active {
       color: $sherpa-brand-primary;
     }
   }
-  
 
   ul {
     display: flex;
@@ -53,58 +107,12 @@
   }
 
   @include media-breakpoint-down(lg) {
-      .row {
-        flex-direction: row;
-
-        .col {
-          flex-basis: 20%;
-          padding: 1em 1em;
-
-          img {
-            max-height: 32px;
-          }
-
-         &:nth-child(1) {
-           order: 0;
-           flex-basis: 15%;
-         } 
-
-         &:nth-child(2) {
-           order: 8;
-         }
-
-         &:nth-child(3) {
-           order: 2;
-           flex-basis: 30%;
-         }
-
-         &:nth-child(4) {
-           order: 9;
-         }
-
-         &:nth-child(5) {
-           order: 5;
-           flex-basis: 15%;
-         }
-
-         &:nth-child(6) {
-           order: 6;
-         }
-
-         &:nth-child(7) {
-           order: 8;
-         }
-
-         &:nth-child(8) {
-           order: 2;
-           flex-basis: 33%;
-         }
-
-         &:nth-child(9) {
-           order: 9;
-         }
-        }
-      }
+    @include ribbon-small();
   }
+}
 
+#sidebar {
+  .ribbon {
+    @include ribbon-small();
+  }
 }

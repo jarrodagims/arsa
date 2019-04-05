@@ -17,6 +17,55 @@
     </section>
 </div>
 
-<img src="<?=IMGURL?>10percentoff.png" alt="10% off" class="ten-percent-off">
+<section class="home-module-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="extra-padding"><a href="<?=SITEURL?>">
+                        <button class="btn-primary btn">LEARN MORE</button>
+                    </a></div>
+            </div>
+            <div class="col">
+                <div class="extra-padding"><a href="<?=SITEURL?>">
+                        <button class="btn-primary btn">LEARN MORE</button>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ribbon">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img src="<?=IMGURL?>therbal.png" alt="Therbal">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>jaloma.png" alt="Jaloma">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>vitacilina.png" alt="Vitacilina">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>grisi.png" alt="Grisi">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>vicks.png" alt="Vicks">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>picot.png" alt="Picot">
+            </div>
+            <div class="col fibra">
+                <img src="<?=IMGURL?>fibra-kania.png" alt="Fibra Kania">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>eucalin.png" alt="Eucalin">
+            </div>
+            <div class="col">
+                <img src="<?=IMGURL?>del-indio-papago.png" alt="Del Indio Papago">
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php endif; ?>
 </div>

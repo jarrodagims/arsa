@@ -131,3 +131,15 @@
     }
   }
 }
+
+.internal-banner {
+  .jumbotron {
+    background: url('../img/products-header.jpg') 0 0 no-repeat;
+    background-size: cover;
+    height: 313px;
+
+    h1 {
+      margin-bottom: 1em;
+    }
+  }
+}

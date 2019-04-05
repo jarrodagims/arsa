@@ -11,7 +11,6 @@
         $(".dropdown-toggle").attr("data-toggle", "dropdown");
       };
 
-
       //Only do slideshow on small screens
       var timeout;
       window.addEventListener(
@@ -28,9 +27,9 @@
       );
 
       function resize() {
-        if ($(window).width() >= 992) {
+        if ($(window).width() >= 768) {
           deskFunctions();
-        } else if ($(window).width() < 992) {
+        } else if ($(window).width() < 768) {
           mobileFunctions();
         }
       }

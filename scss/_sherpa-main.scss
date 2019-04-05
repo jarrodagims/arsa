@@ -270,9 +270,6 @@ body {
         }
 
         h1 {
-          color: #4d4d4d;
-          font-size: 32px;
-
           span {
             margin-top: 0;
           }
@@ -375,17 +372,17 @@ body {
           }
         }
 
-//         h1,
-//         h2,
-//         h3 {
-//           ul {
-//             display: none;
-//           }
+        //         h1,
+        //         h2,
+        //         h3 {
+        //           ul {
+        //             display: none;
+        //           }
 
-//           &.expanded ul {
-//             display: block;
-//           }
-//         }
+        //           &.expanded ul {
+        //             display: block;
+        //           }
+        //         }
 
         .page-bottom {
           padding-top: 2em;
@@ -417,8 +414,8 @@ body {
           padding: 0 0;
           text-align: center;
           margin: 0 auto;
-          background-size: cover;
-          background: url("../img/bg-mid-banner.jpg") 0 0 no-repeat;
+          //           background-size: cover;
+          //           background: url("../img/bg-mid-banner.jpg") 0 0 no-repeat;
 
           @include media-breakpoint-down(md) {
             margin-top: 2em;
@@ -426,7 +423,7 @@ body {
 
           @include media-breakpoint-up(md) {
             height: 305px;
-          } 
+          }
 
           .banner-title {
             z-index: 1;
@@ -559,9 +556,9 @@ body {
 
         h1 {
           margin-bottom: 1em;
-          font-size: 44px;
-          color: #4d4d4d;
-          @include acumin();
+          color: #726658;
+          font-size: 37px;
+          font-weight: 300;
           line-height: 1.25;
         }
 
@@ -682,10 +679,10 @@ body {
           margin: 0 0;
         }
 
-//         &.expander,
-//         .expander {
-//           margin-bottom: 2.5em;
-//         }
+        //         &.expander,
+        //         .expander {
+        //           margin-bottom: 2.5em;
+        //         }
 
         @include media-breakpoint-down(xs) {
           &.expander,
@@ -707,14 +704,14 @@ body {
 
       .page-content h2,
       .page-content h3 {
-        font-weight: 500;
+        font-weight: 300;
         line-height: 1.5;
         opacity: 0.75;
-        color: #4d4d4d;
-        text-transform: uppercase;
         margin-top: 1em;
+        @include raleway();
+        color: #726658;
 
-        &[data-toggle=collapse],
+        &[data-toggle="collapse"],
         .expander {
           @include expander($sherpa-brand-primary);
         }
@@ -1197,7 +1194,6 @@ body.internal {
   width: 100%;
 }
 
-
 .stuck {
   position: fixed;
   top: 0;
@@ -1578,8 +1574,6 @@ ul.floorplan-nav {
       }
 
       .col {
-      
-
         a {
           display: flex;
           flex: 1;
@@ -1593,8 +1587,6 @@ ul.floorplan-nav {
               transform: translateX(-50%) translateY(-50%);
             }
             div {
-
-
               &::before {
                 background: rgba(0, 0, 0, 0.5);
                 position: absolute;
@@ -2042,7 +2034,7 @@ ul.expand {
 
 .pagination {
   justify-content: center;
- 
+
   .page-numbers {
     width: 30px;
     height: 30px;
@@ -2054,12 +2046,14 @@ ul.expand {
     line-height: 30px;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     color: #4e4e4e;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 
-  a:first-child, span:first-child {
+  a:first-child,
+  span:first-child {
     margin-left: 0;
   }
 }
@@ -2067,11 +2061,88 @@ ul.expand {
 .dark {
   color: $white;
 
-  h2, h3 {
+  h2,
+  h3 {
     color: $white;
   }
 }
 
 .flex-col {
   display: flex;
+}
+
+
+
+body.page-template-page-products {
+
+  .icon-row { 
+    background: #F4F4F4;
+
+    svg {
+      margin-bottom: 20px;
+    }
+
+    svg path {
+      fill: $sherpa-tertiary-color;
+    }
+
+    .box-bottom {
+      padding: 3em;
+    }
+  }
+
+  .product-sidebar {
+    padding: 3em;
+      background: #f5f7f7;
+    margin: 2em 0;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+
+    }
+
+    a {
+      color: $sherpa-tertiary-color;
+    }
+  }
+
+  .products {
+    margin: 2em 0;
+  }
+
+  .product {
+    @include dropshadow();
+    text-align: center;
+
+  }
+
+  .product p, .product ul {
+    font-size: 10px;
+  }
+
+  #main .container .product ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    
+  }
+
+  #main .container .product ul li {
+    font-weight: 700;
+  }
+
+  .product h2 {
+    font-size: 15px;
+    color: #000000;
+  }
+
+  .product strong {
+    color: $sherpa-tertiary-color;
+  }
+
+  .product em strong {
+    color: #000;
+  }
 }

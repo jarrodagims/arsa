@@ -164,7 +164,7 @@
     padding-right: 90px;
 
     .navbar-button {
-      justify-content: center;
+//       justify-content: center;
       align-items: flex-end;
     }
   }
@@ -319,7 +319,15 @@
       background: $white;
       z-index: 1;
     }
+  }
 
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+     .navbar-dark .navbar-nav .nav-link {
+      color: $sherpa-dark-color;
+    }
+  } 
+
+  @include media-breakpoint-down(md) {
     #menu-primary {
       background: $sherpa-dark-color;
       margin-top: 8px;
@@ -372,5 +380,15 @@
         color: #fff;
       }
     }
+  }
+}
+
+.internal .navbar-right {
+  em, a {
+    font-size: 15px; 
+    @include montserrat();
+    font-style: normal;
+    letter-spacing: 0;
+    font-weight: 300;
   }
 }

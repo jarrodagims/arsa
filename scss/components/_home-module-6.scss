@@ -6,7 +6,9 @@
     margin-bottom: 0;
   }
 
-  
+//   a {
+//     color: $white;
+//   }
 
   h2 {
     font-size: 40px;
@@ -22,6 +24,10 @@
     padding: 2em 0;
     background: $sherpa-brand-primary;
     color: $white;
+
+     a {
+      color: $white;
+    }
 
     h2 {
       font-size: 20px;
