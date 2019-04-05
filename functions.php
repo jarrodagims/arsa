@@ -219,3 +219,79 @@ add_filter('tiny_mce_before_init', 'override_mce_options');
 
 // Disable use XML-RPC
 add_filter( 'xmlrpc_enabled', '__return_false' );
+
+add_action( 'init', 'lc_custom_post_product' );
+ 
+// The custom function to register a Product post type
+function lc_custom_post_Product() {
+ 
+  // Set the labels, this variable is used in the $args array
+  $labels = array(
+    'name'               => __( 'Products' ),
+    'singular_name'      => __( 'Product' ),
+    'add_new'            => __( 'Add New Product' ),
+    'add_new_item'       => __( 'Add New Product' ),
+    'edit_item'          => __( 'Edit Product' ),
+    'new_item'           => __( 'New Product' ),
+    'all_items'          => __( 'All Products' ),
+    'view_item'          => __( 'View Product' ),
+    'search_items'       => __( 'Search Products' ),
+    'featured_image'     => 'Poster',
+    'set_featured_image' => 'Add Poster'
+  );
+ 
+  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
+  $args = array(
+    'labels'            => $labels,
+    'description'       => 'Holds our Products and Product specific data',
+    'public'            => true,
+    'menu_position'     => 5,
+    'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'page-attributes' ),
+    'has_archive'       => 'products',
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+	'query_var'         => 'product',
+	'taxonomies'          => array( 'product_categories' )
+  );
+ 
+  // Call the actual WordPress function
+  // Parameter 1 is a name for the post type
+  // Parameter 2 is the $args array
+  register_post_type( 'Product', $args);
+}
+ 
+
+// hook into the init action and call create_product_taxonomies when it fires
+add_action( 'init', 'create_product_taxonomies', 0 );
+
+// create two taxonomies, genres and writers for the post type "product"
+function create_product_taxonomies() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Families', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Family', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Families', 'textdomain' ),
+		'all_items'         => __( 'All Families', 'textdomain' ),
+		'parent_item'       => __( 'Parent Family', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Family:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Family', 'textdomain' ),
+		'update_item'       => __( 'Update Family', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Family', 'textdomain' ),
+		'new_item_name'     => __( 'New Family Name', 'textdomain' ),
+		'menu_name'         => __( 'Family', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'family/' , 'with_front' => false),
+		'rewrite'           => array( 'slug' => 'family' ),
+	);
+
+	
+
+	register_taxonomy( 'family', array( 'product' ), $args );
+}

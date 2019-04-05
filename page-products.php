@@ -7,7 +7,7 @@ Template Name: Products
 <section id="main">
     <div class="container">
         <div class="row">
-            <div class="col col-md-3">
+            <div class="col col-lg-3 col-xs-12">
                 <div class="product-sidebar">
                     <strong>Products</strong>
                     <ul>
@@ -89,227 +89,240 @@ Template Name: Products
                 <div class="container-fluid">
                     <div class="columns products row">
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><a href="#"><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                    <h2>Lemongrass</h2>
+                                    <ul>
+                                        <li><strong>BRAND:</strong> THERBAL</li>
+                                        <li><strong>FAMILY:</strong> AROMATICS</li>
+                                        <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                    </ul>
+                                    <p>
+                                        <em><strong>About the Product:</strong></em> This exquisite and mild infusion is
+                                        the
+                                        perfect drink after meals to
+                                        unwind and aid the digestion process.
+                                    </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                    <ul>
+                                        <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                    </ul>
+                                </a></div>
                         </div>
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="columns products row">
-                        <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
-
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
-                        </div>
-                        <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
-
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
-                        </div>
-                        <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
-
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="columns products row">
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns products row">
+                        <div class="col product">
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
+
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col product">
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
+
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col product">
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
+
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
                     <div class="columns products row">
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col product">
-                            <img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                            <h2>Lemongrass</h2>
-                            <ul>
-                                <li><strong>BRAND:</strong> THERBAL</li>
-                                <li><strong>FAMILY:</strong> AROMATICS</li>
-                                <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                            </ul>
-                            <p>
-                                <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
-                                perfect drink after meals to
-                                unwind and aid the digestion process.
-                            </p>
+                            <div><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2>Lemongrass</h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
 
-                            <ul>
-                                <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                            </ul>
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
