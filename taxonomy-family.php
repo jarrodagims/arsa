@@ -6,38 +6,39 @@
 $cat_slug = get_queried_object()->slug;
 $cat_name = get_queried_object()->name;
 
+$taxonomy     = 'neighborhood';
+$orderby      = 'name'; 
+$show_count   = false;
+$pad_counts   = false;
+$hierarchical = true;
+$title        = '';
+
+$args = array(
+'taxonomy'     => $taxonomy,
+'orderby'      => $orderby,
+'show_count'   => $show_count,
+'pad_counts'   => $pad_counts,
+'hierarchical' => $hierarchical,
+'title_li'     => $title
+);
 
 ?><?php get_template_part('template-parts/page/page', 'top-banner'); ?>
 <section id="main" class="floorplans">
     <article>
         <div class="content page-content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-
-                        <?php 
-                            $taxonomy     = 'neighborhood';
-                            $orderby      = 'name'; 
-                            $show_count   = false;
-                            $pad_counts   = false;
-                            $hierarchical = true;
-                            $title        = '';
-                            
-                            $args = array(
-                            'taxonomy'     => $taxonomy,
-                            'orderby'      => $orderby,
-                            'show_count'   => $show_count,
-                            'pad_counts'   => $pad_counts,
-                            'hierarchical' => $hierarchical,
-                            'title_li'     => $title
-                            );
-                        ?>
-
                         <ul class="list-inline floorplan-nav">
                             <?php wp_list_categories( $args ); ?>
                         </ul>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="container">
+                <div class="row">
+                    <div class="col">
                         <?php
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');
                         if ( get_query_var('page') ) $paged = get_query_var('page');
@@ -92,9 +93,8 @@ $cat_name = get_queried_object()->name;
                                     </div>
                                 </a>
                                 <?php else: ?>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <a href="#" style="pointer-events: none;" title="<?php the_title_attribute(); ?>">
                                     <div class="coming-soon">
-
                                         <h2><?php the_title(); ?>
                                         </h2>
                                         <h3><?php echo get_field('sqft'); ?></h3>
