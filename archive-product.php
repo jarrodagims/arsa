@@ -2,7 +2,22 @@
 
 /*
 Template Name: Products
- */?>
+ */
+$taxonomy     = 'family';
+$orderby      = 'name'; 
+$show_count   = false;
+$pad_counts   = false;
+$hierarchical = true;
+
+$args = array(
+'taxonomy'     => $taxonomy,
+'orderby'      => $orderby,
+'show_count'   => $show_count,
+'pad_counts'   => $pad_counts,
+'hierarchical' => $hierarchical,
+'title_li'     => $title
+);
+?>
 <?php get_template_part('template-parts/page/page', 'top-banner');?>
 <section id="main">
     <div class="container">
@@ -74,13 +89,8 @@ Template Name: Products
                 </div>
 
                 <div class="product-sidebar"><strong>Families</strong>
-
                     <ul>
-                        <li><a href="#">Auxiliary</a></li>
-                        <li><a href="#">Fruit</a></li>
-                        <li><a href="#">Aromatics</a></li>
-                        <li><a href="#">Healthy Blends</a></li>
-                        <li><a href="#">Camellia Sinensis</a></li>
+                        <?php wp_list_categories( $args ); ?>
                     </ul>
                 </div>
             </div>
