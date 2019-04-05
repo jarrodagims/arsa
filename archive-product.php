@@ -87,6 +87,63 @@ Template Name: Products
 
             <div class="col">
                 <div class="container-fluid">
+
+                    <?php
+                        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; //The magic, ternary if statement
+                 
+                        $query = new WP_Query( array('order' => 'ASC', 'posts_per_page' => 50, 'post_type' => 'product', 'paged' => $paged ) );
+
+                        $posts_per_row = 3;
+                        $post_counter = 0; 
+
+                        if ( $query->have_posts() ) : ?>
+
+
+
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                    <?php if( ( ++$post_counter % $posts_per_row ) == 1  || $posts_per_row == 1 ) :
+                                if( $post_counter > 1 ) :
+                                    echo '</div>';
+                                endif;
+                            echo '<div class="columns products row">';
+                            endif;
+                            ?>
+                    <div class="col product">
+                        <div><a href="#"><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
+                                <h2><?php the_title_attribute(); ?></h2>
+                                <ul>
+                                    <li><strong>BRAND:</strong> THERBAL</li>
+                                    <li><strong>FAMILY:</strong> AROMATICS</li>
+                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
+                                </ul>
+                                <p>
+                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is
+                                    the
+                                    perfect drink after meals to
+                                    unwind and aid the digestion process.
+                                </p>
+
+                                <ul>
+                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
+                                </ul>
+                            </a></div>
+                    </div>
+
+                    <?php endwhile;  wp_reset_postdata(); ?>
+                </div>
+                <div class="pagination">
+                    <?php pagination_bar( $query );  ?>
+                </div>
+
+
+                <!-- show pagination here -->
+                <?php else :   ?>
+
+                <!-- show 404 error here -->
+                <?php endif; ?>
+
+
+                <!-- 
                     <div class="columns products row">
                         <div class="col product">
                             <div><a href="#"><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
@@ -324,10 +381,10 @@ Template Name: Products
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
             </div>
         </div>
+    </div>
     </div>
 </section>
 

@@ -1,4 +1,4 @@
-<?php if(is_archive('products') || is_single('product')): ?>
+<?php if(is_archive('products') || is_singular('product') || is_taxonomy('family')): ?>
 <div class="internal-banner">
 
     <div class="bg-jumbo">
