@@ -2073,7 +2073,7 @@ ul.expand {
 
 
 
-body.post-type-archive-product {
+body.post-type-archive-product, body.post-type-archive-product, body.tax-family, body.single-product {
 
   .icon-row { 
     background: #F4F4F4;
@@ -2207,6 +2207,10 @@ body.post-type-archive-product {
     #main .row {
       flex-direction: column-reverse;
       margin-bottom: 0;
+    }
+
+    .products {
+      margin: 0 0;
     }
 
     .icon-row {
