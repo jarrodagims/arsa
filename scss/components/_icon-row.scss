@@ -16,7 +16,7 @@
     }
 
     a:hover svg path {
-      fill: $white;
+      fill: $white !important;
     }
 
     .flex-col .box {
@@ -31,8 +31,6 @@
       height: 34px;
       margin-bottom: 1em;
     }
-
-    
 
     .flex-col a {
       height: auto;
@@ -106,6 +104,12 @@
           bottom: -15px;
           left: 50%;
           transform: translateX(-50%);
+        }
+
+        svg {
+          path {
+            fill: darken($sherpa-brand-primary, 10%);
+          }
         }
       }
     }

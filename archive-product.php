@@ -26,66 +26,16 @@ $args = array(
                 <div class="product-sidebar">
                     <strong>Products</strong>
                     <ul>
-                        <li><a href="#">Lemongrass</a></li>
 
-                        <li><a href="#">Pineapple Tea</a></li>
+                        <?php $query2 = new WP_Query( array('order' => 'ASC', 'post_type' => 'product' ) );
 
-                        <li><a href="#">Abango With Propolis</a></li>
-                        <li><a href="#">With Echinacea</a></li>
-
-                        <li><a href="#">Artichoke</a></li>
-
-                        <li><a href="#">Arnica</a></li>
-
-                        <li><a href="#">Boldo</a></li>
-
-                        <li><a href="#">Cinnamon</a></li>
-
-                        <li><a href="#">Prume</a></li>
-
-                        <li><a href="#">Horsetail</a></li>
-
-                        <li><a href="#">Damiana de California</a></li>
-
-                        <li><a href="#">Delinea-Yutzil</a></li>
-
-                        <li><a href="#">Passion Fruit-Peach</a></li>
-
-                        <li><a href="#">Linden Flower</a></li>
-
-                        <li><a href="#">St John’s Worth</a></li>
-
-                        <li><a href="#">Eryngo Infusion</a></li>
-
-                        <li><a href="#">Peppermint</a></li>
-
-                        <li><a href="#">Hibiscus</a></li>
-
-                        <li><a href="#">Apple Cinnamon</a></li>
-
-                        <li><a href="#">Chamomile With Anise</a></li>
-
-                        <li><a href="#">Chamomile-Mint</a></li>
-
-                        <li><a href="#">Chamomile</a></li>
-
-                        <li><a href="#">Maternitea</a></li>
-
-                        <li><a href="#">Blueberry-Cherry</a></li>
-
-                        <li><a href="#">Moringa</a></li>
-
-                        <li><a href="#">Samadhi Light</a></li>
-
-                        <li><a href="#">7 Blossoms</a></li>
-
-                        <li><a href="#">Fruit Tea Assortment</a></li>
-
-                        <li><a href="#">Red Tea Pu-Erh</a></li>
-
-                        <li><a href="#">Green Tea</a></li>
-                        <li><a href="#">Valeriana</a></li>
+if ( $query2->have_posts() ) : ?>
+                        <?php while ( $query2->have_posts() ) : $query2->the_post(); 
+                    ?>
+                        <li><a href="<?php the_permalink(); ?>"><?php the_title_attribute(); ?></a></li>
+                        <?php endwhile;  wp_reset_postdata(); ?>
                     </ul>
+                    <?php endif; ?>
                 </div>
 
                 <div class="product-sidebar"><strong>Families</strong>
@@ -99,7 +49,10 @@ $args = array(
                 <div class="container-fluid">
                     <?php
                         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; //The magic, ternary if statement
-                 
+
+                        remove_filter( 'the_excerpt', 'wpautop' );
+
+                      
                         $query = new WP_Query( array('order' => 'ASC', 'posts_per_page' => 50, 'post_type' => 'product', 'paged' => $paged ) );
 
                         $posts_per_row = 3;
@@ -115,24 +68,42 @@ $args = array(
                             endif;
                             ?>
                     <div class="col product">
-                        <div><a href="#"><img src="<?=IMGURL?>products/lemongrass.png" alt="Lemongrass" />
-                                <h2><?php the_title_attribute(); ?></h2>
-                                <ul>
-                                    <li><strong>BRAND:</strong> THERBAL</li>
-                                    <li><strong>FAMILY:</strong> AROMATICS</li>
-                                    <li><strong>CLASSIFICATION:</strong> INFUSION HERBS</li>
-                                </ul>
-                                <p>
-                                    <em><strong>About the Product:</strong></em> This exquisite and mild infusion is
-                                    the
-                                    perfect drink after meals to
-                                    unwind and aid the digestion process.
-                                </p>
+                        <?php   if(current_user_can('edit_pages')) {
+                            $edit_url = get_edit_post_link();
+                            $edit_link = " <small><a href=\"$edit_url\" class=\"post-edit-link\">" . __('Edit Page','sherpa') . "</a></small>";
+                        } else {
+                            $edit_link = NULL;
+                        }
+                  ?>
+                        <div>
+                            <?php if ( has_post_thumbnail() ) : ?>
+                            <div class="product-image">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
 
-                                <ul>
-                                    <li><strong>SIZE:</strong> 25 TEA BAGS</li>
-                                </ul>
-                            </a></div>
+                            <?php endif; ?>
+                            <?php
+                            
+                            //if(current_user_can('edit_pages')) {
+                              //echo $edit_link; }
+                               ?>
+                            <h2><?php the_title_attribute(); ?></h2>
+                            <ul>
+                                <li><strong>BRAND:</strong> <?php echo get_field('brand'); ?></li>
+                                <li><strong>FAMILY:</strong> <?php $terms = get_the_terms( $post->ID , 'family' ); 
+                    foreach ( $terms as $term ) {
+                    echo $term->name;
+                    } ?></li>
+                                <li><strong>CLASSIFICATION:</strong> <?php echo get_field('classification'); ?></li>
+                            </ul>
+                            <p>
+                                <em><strong>About the Product:</strong></em> <?php the_excerpt(); ?>
+                            </p>
+
+                            <ul>
+                                <li><strong>SIZE:</strong> <?php echo get_field('size'); ?> TEA BAGS</li>
+                            </ul>
+                        </div>
                     </div>
                     <?php endwhile;  wp_reset_postdata(); ?>
                 </div>
