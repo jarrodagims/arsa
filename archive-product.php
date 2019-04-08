@@ -26,9 +26,7 @@ $args = array(
                 <div class="product-sidebar">
                     <strong>Products</strong>
                     <ul>
-
-                        <?php $query2 = new WP_Query( array('order' => 'ASC', 'post_type' => 'product' ) );
-
+                        <?php $query2 = new WP_Query( array('order' => 'ASC', 'post_type' => 'product', 'posts_per_page' => -1 ) );
 if ( $query2->have_posts() ) : ?>
                         <?php while ( $query2->have_posts() ) : $query2->the_post(); 
                     ?>
@@ -68,7 +66,8 @@ if ( $query2->have_posts() ) : ?>
                             endif;
                             ?>
                     <div class="col product">
-                        <?php   if(current_user_can('edit_pages')) {
+                        <?php   
+                        if(current_user_can('edit_pages')) {
                             $edit_url = get_edit_post_link();
                             $edit_link = " <small><a href=\"$edit_url\" class=\"post-edit-link\">" . __('Edit Page','sherpa') . "</a></small>";
                         } else {
@@ -77,6 +76,7 @@ if ( $query2->have_posts() ) : ?>
                   ?>
                         <div>
                             <?php if ( has_post_thumbnail() ) : ?>
+
                             <div class="product-image">
                                 <?php the_post_thumbnail(); ?>
                             </div>
