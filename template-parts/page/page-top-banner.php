@@ -6,7 +6,17 @@
         <div class="jumbotron">
 
             <div class="jumbo-content">
-                <h1>Infusion Herbs Teas</h1>
+                <h1><?php 
+                if (is_page()) { // PAGE
+                    the_title();
+                } 
+                else if(is_post_type_archive()) {
+                    echo post_type_archive_title( '', false );
+                }
+                else if(is_taxonomy('family')) {
+                    echo single_term_title();
+                }
+                ?></h1>
 
                 <div>
                     <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">Contact Us</button></a>

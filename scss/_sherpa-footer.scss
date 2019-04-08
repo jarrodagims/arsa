@@ -32,11 +32,19 @@
       color: $sherpa-brand-primary;
     }
   }
+  
 
+ .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   .col {
     position: relative;
+   
   }
 
   .row {
@@ -56,6 +64,10 @@
   @include media-breakpoint-up(lg) {
 
     padding: 2em 0 3em;
+
+    .navbar-brand {
+      width: 280px;
+    }
 
 
     .h2 {
