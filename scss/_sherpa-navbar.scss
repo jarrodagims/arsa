@@ -217,12 +217,18 @@
       color: $sherpa-dark-color;
       font-size: 30px;
       @include poppins();
-      letter-spacing: 3px;
+      
 
+      
       &:hover {
         color: $sherpa-brand-primary;
       }
     }
+
+    &.contact {
+        letter-spacing: 3px;
+    }
+
   }
 
   .social-media li a {

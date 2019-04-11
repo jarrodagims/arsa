@@ -45,7 +45,7 @@ if ( $query2->have_posts() ) : ?>
 
             <div class="col">
                 <div class="container-fluid">
-                    <?php
+                    <?php wp_reset_postdata();
                         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; //The magic, ternary if statement
 
                         

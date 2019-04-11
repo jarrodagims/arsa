@@ -54,7 +54,6 @@
                         </div>
 
                         <div class="col">
-                            <span class="title d-none d-lg-block">&nbsp;</span>
                             <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">CONTACT US</button></a>
                         </div>
                     </div>

@@ -5,8 +5,11 @@ Template Name: Home
  */?>
 </div>
 
-
-<?php echo get_template_part('template-parts/icon', 'row'); ?>
+<section class="icon-row">
+    <div class="container-fluid">
+        <?php echo get_template_part('template-parts/icon', 'row'); ?>
+    </div>
+</section>
 
 <section class="home-module-2">
     <div class="container-fluid">
@@ -77,7 +80,7 @@ Template Name: Home
 
                     <p>Our interest lies in improving the quality of life through medicinal items, beauty products,
                         natural health products, and dietary supplements. It’s why we only distribute the best and
-                        well-known brands from Mexico that have withstood the test of time and several generations. Our
+                        well-known brands from Mexico, the ones that have withstood the test of time and several generations. Our
                         products range from digestive health products, health supplements, infusion teas, natural soaps,
                         shampoos, lotions, cough syrups, and more.
                     </p>
@@ -100,9 +103,7 @@ Template Name: Home
         <div class="row">
             <div class="col dark">
                 <div class="extra-padding">
-                    <h2>Located in El Paso, Serving the Entire United States</h2>
-
-
+                    <h2 class="smaller">Located in El Paso, Serving the Entire United States</h2>
                     <p>
                         Arsa Distributing’s headquarters is located at the border between Mexico and the United States
                         in El Paso, TX.
@@ -141,21 +142,25 @@ Template Name: Home
 
             <div class="col col-md-1"></div>
 
-            <div class="col">
-                <h2>
-                    We Specialize in Importing and Distributing Products to Vendors
-                </h2>
+            <div class="col light">
+                <div class="extra-padding">
+                    <h2>
+                        We Specialize in Importing and Distributing Products to Vendors
+                    </h2>
 
-                <p class="blurb">
-                    At Arsa Distributing, we work with small and large retailers as well as supermarkets across the U.S.
-                    to bring them the products their customers enjoy.
-                </p>
+                    <p class="blurb">
+                        At Arsa Distributing, we work with small and large retailers as well as supermarkets across the
+                        U.S.
+                        to bring them the products their customers enjoy.
+                    </p>
 
-                <p>
-                    We also distribute to local shops and family owned stores. While we also sell directly to the
-                    individual consumer, our main focus is getting our products on the shelves of your favorite local
-                    store so you can have quick and easy access to these wonderful items at your convenience!
-                </p>
+                    <p>
+                        We also distribute to local shops and family-owned stores. While we also sell directly to the
+                        individual consumer, our main focus is getting our products on the shelves of your favorite
+                        local
+                        store so you can have quick and easy access to these wonderful items at your convenience!
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -169,7 +174,6 @@ Template Name: Home
                 <div class="extra-padding">
                     <h2>
                         Our Value Proposition
-
                     </h2>
 
                     <p>As a health product distributor, we believe in the power of every one of these products. They are
@@ -219,7 +223,7 @@ Template Name: Home
                     If you have questions about our services or would like more information on how to get traditional
                     Mexican products into your store, please contact us today. We are located at 500 West Overland,
                     Suite 250N, in El Paso, Texas and can be reached at <a
-                        href="<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>.
+                        href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a>.
                 </p>
 
             </div>

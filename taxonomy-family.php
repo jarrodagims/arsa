@@ -44,7 +44,7 @@ if ( $query2->have_posts() ) : ?>
 
             <div class="col">
                 <div class="container-fluid">
-                    <?php
+                    <?php wp_reset_postdata();
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');
                         if ( get_query_var('page') ) $paged = get_query_var('page');
 

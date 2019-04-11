@@ -28,13 +28,13 @@
     }
 
     .flex-col svg {
-      height: 34px;
+      height: 24px;
       margin-bottom: 1em;
     }
 
     .flex-col a {
       height: auto;
-      font-size: 12px;
+      font-size: 9px;
 
       &:hover {
          background: $sherpa-brand-primary;
@@ -60,8 +60,8 @@
       @include nodropshadow();
     } 
 
-    .box-bottom {
-      padding: 3em;
+    .flex-col .box-bottom {
+      padding: 2em;
     }
 }
 
@@ -152,11 +152,29 @@
 @include media-breakpoint-down(lg) {
   .icon-row {
     @include icon-small(); 
+
+   
   }
+}
+
+.internal .icon-row .box {
+  display: none;
 }
 
 #sidebar .icon-row {
   flex-direction: column;
   @include icon-small();
   @include dropshadow();  
+
+   svg {
+      height: 34px;
+    }
+
+    .flex-col a {
+      font-size: 12px;
+    }
+
+    .flex-col .box-bottom {
+      padding: 3em;
+    }
 }

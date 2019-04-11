@@ -1,5 +1,5 @@
 <div class="col product">
-    <?php    remove_filter( 'the_excerpt', 'wpautop' );
+    <?php    remove_filter( 'the_content', 'wpautop' );
                         if(current_user_can('edit_pages')) {
                             $edit_url = get_edit_post_link();
                             $edit_link = " <small><a href=\"$edit_url\" class=\"post-edit-link\">" . __('Edit Page','sherpa') . "</a></small>";
@@ -33,7 +33,7 @@
                 <li><strong>CLASSIFICATION:</strong> <?php echo get_field('classification'); ?></li>
             </ul>
             <p>
-                <em><strong>About the Product:</strong></em> <?php the_excerpt(); ?>
+                <em><strong>About the Product:</strong></em> <?php the_content(); ?>
             </p>
 
             <ul>

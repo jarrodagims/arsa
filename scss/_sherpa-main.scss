@@ -138,7 +138,7 @@ Animations
 
 @include media-breakpoint-down(md) {
   .extra-padding {
-    padding: 0 15px;
+    padding: 0 30px;
   }
 
   .fade-down {
@@ -301,7 +301,7 @@ body {
         }
 
         h2 {
-          font-size: 25px;
+          font-size: 23px;
           color: $sherpa-brand-primary;
         }
 
@@ -734,7 +734,7 @@ body {
 
           p,
           ul {
-            font-size: 17px;
+            font-size: 15px;
           }
 
           .contact-info p {
@@ -2073,7 +2073,7 @@ ul.expand {
 
 
 
-body.post-type-archive-product, body.post-type-archive-product, body.tax-family, body.single-product {
+body.post-type-archive-product, body.blog, body.tax-family, body.single-product, body.single {
 
   .icon-row { 
     background: #F4F4F4;
@@ -2227,3 +2227,13 @@ body.post-type-archive-product, body.post-type-archive-product, body.tax-family,
     }
   }
 }
+
+
+
+@include media-breakpoint-down(lg) {
+    .light {
+        background: $white;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+} 
