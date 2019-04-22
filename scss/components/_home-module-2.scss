@@ -40,6 +40,11 @@
 
 .home-module-2 {
   text-align: center;
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 
   h2 {
     color: #4D4D4D;
@@ -63,11 +68,11 @@
     display: flex;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     .col {
-      height: 570px;
-      
+      height: 370px;
 
+      
       .extra-padding {
         height: 100%;
         width: 100%;
@@ -89,9 +94,16 @@
       }
     }
   }
+
+
+  @include media-breakpoint-up(lg) {
+    .col {
+      height: 570px;
+    }
+  }
   
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(sm) {
     @include therbal-small();
   }
 }

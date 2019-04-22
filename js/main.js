@@ -27,9 +27,9 @@
       );
 
       function resize() {
-        if ($(window).width() >= 768) {
+        if ($(window).width() >= 992) {
           deskFunctions();
-        } else if ($(window).width() < 768) {
+        } else if ($(window).width() < 992) {
           mobileFunctions();
         }
       }

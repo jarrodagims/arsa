@@ -1,11 +1,13 @@
 .home-module-4 {
   background: #F1F1F1;
-  padding: 142px 0;
+  padding: 90px 0;
 
   p.blurb {
     color: #818B4D;
     @include serif();
     font-style: italic;
+    font-size: 23px;
+    line-height: 1.5;
   }
 
   .box {

@@ -177,4 +177,8 @@
     .flex-col .box-bottom {
       padding: 3em;
     }
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 5px;
+    }
 }

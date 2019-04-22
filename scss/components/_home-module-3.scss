@@ -1,8 +1,8 @@
 .home-module-3 {
   text-align: center;
-  background: url("../img/mmmmmmaaaaaaaah.jpg") center top no-repeat;
+  background: url("../img/arsa-image.png") center top no-repeat;
   background-size: cover;
-  color: $white; 
+  color: $white;
   text-align: left;
   color: #606060;
 
@@ -21,7 +21,8 @@
     @include serif();
     font-style: italic;
     font-size: 23px;
-    line-height: 1.5; 
+    line-height: 1.5;
+    color: #818b4d;
   }
 
   p {
@@ -30,18 +31,18 @@
 
   h2 {
     font-size: 40px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
+    color: #818b4d;
   }
 
   .extra-padding {
     padding: 180px 0;
   }
- 
 
   @include media-breakpoint-down(lg) {
     padding: 20px 0 0;
     background: none;
-    background: #F1F1F1;
+    background: #f1f1f1;
 
     h2 {
       font-size: 26px;

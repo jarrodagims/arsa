@@ -10,15 +10,18 @@
 <!--<![endif]-->
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132817336-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132817336-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-132817336-1');
-</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132817336-1');
+    </script>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -53,25 +56,23 @@
     <?=get_option('sherpa_schema')?>
 
     <?php endif;?>
-	
-	<!-- Default Statcounter code for Arsa Distributing
+
+    <!-- Default Statcounter code for Arsa Distributing
 https://www.arsaimports.com/ -->
-<script type="text/javascript">
-var sc_project=11930565; 
-var sc_invisible=1; 
-var sc_security="44b52145"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - StatCounter" href="https:/statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/11930565/0/44b52145/1/"
-alt="Web Analytics Made Easy -
-StatCounter"></a></div></noscript>
-<!-- End of Statcounter Code -->
-	
+    <script type="text/javascript">
+    var sc_project = 11930565;
+    var sc_invisible = 1;
+    var sc_security = "44b52145";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https:/statcounter.com/" target="_blank"><img class="statcounter"
+                    src="https://c.statcounter.com/11930565/0/44b52145/1/" alt="Web Analytics Made Easy -
+StatCounter"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+
 </head>
 
 <body <?php body_class();?>>
@@ -106,7 +107,7 @@ StatCounter"></a></div></noscript>
                                 </li>
                                 <?php if(!is_front_page()) : ?>
                                 <li><?php
-        $sm = new SocialMedia(array('facebook', 'twitter'));
+        $sm = new SocialMedia(array('facebook', 'twitter', 'linkedin'));
         $sm->setSize('sm');
         $sm->showNetworkButtons();
         $sm->setColorType('singleColor');

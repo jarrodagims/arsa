@@ -22,6 +22,12 @@ $cat_name = get_queried_object()->name;
     <div class="container">
         <div class="row">
             <div class="col col-lg-3 col-xs-12">
+                <div class="product-sidebar"><strong>Families</strong>
+                    <ul>
+                        <?php wp_list_categories( $args ); ?>
+                    </ul>
+                </div>
+
                 <div class="product-sidebar">
                     <strong>Products</strong>
                     <ul>
@@ -33,12 +39,6 @@ if ( $query2->have_posts() ) : ?>
                         <?php endwhile;  wp_reset_postdata(); ?>
                     </ul>
                     <?php endif; ?>
-                </div>
-
-                <div class="product-sidebar"><strong>Families</strong>
-                    <ul>
-                        <?php wp_list_categories( $args ); ?>
-                    </ul>
                 </div>
             </div>
 

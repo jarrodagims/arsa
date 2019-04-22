@@ -822,7 +822,7 @@ body #main {
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .page-template-default,
   .blog,
   .error-404,

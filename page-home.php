@@ -14,15 +14,18 @@ Template Name: Home
 <section class="home-module-2">
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <div class="extra-padding"><a href="<?=SITEURL?>">
+            <div class="col"><a href="<?=SITEURL?>/therbal-tea-el-paso/">
+                    <div class="extra-padding">
                         <button class="btn-primary btn">LEARN MORE</button>
-                    </a></div>
+                    </div>
+                </a>
             </div>
             <div class="col">
-                <div class="extra-padding"><a href="<?=SITEURL?>">
+                <a href="<?=SITEURL?>/eucalin-el-paso/">
+                    <div class="extra-padding">
                         <button class="btn-primary btn">LEARN MORE</button>
-                    </a></div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -80,7 +83,8 @@ Template Name: Home
 
                     <p>Our interest lies in improving the quality of life through medicinal items, beauty products,
                         natural health products, and dietary supplements. It’s why we only distribute the best and
-                        well-known brands from Mexico, the ones that have withstood the test of time and several generations. Our
+                        well-known brands from Mexico, the ones that have withstood the test of time and several
+                        generations. Our
                         products range from digestive health products, health supplements, infusion teas, natural soaps,
                         shampoos, lotions, cough syrups, and more.
                     </p>
@@ -88,7 +92,7 @@ Template Name: Home
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
 
             <div class="col">
             </div>
@@ -98,7 +102,7 @@ Template Name: Home
                 <img src="<?=IMGURL ?>badge.svg" alt="Serving the Whole United States">
             </div>
 
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col dark">
@@ -188,7 +192,9 @@ Template Name: Home
 
                     <p>
                         The signature products we carry and import include the Eucalin cough syrups, fiber, and natural
-                        teas. Be sure to check out our over-the-counter page for more information on medicinal products,
+                        teas. Be sure to check out our <a
+                            href="<?=SITEURL?>/over-the-counter-medical-items-el-paso/">over-the-counter</a> information
+                        on medicinal products,
                         health and beauty, and natural supplements. You will find an array of products. Find something
                         for the needs of your entire family too, from specialty creams and shampoos to cold medicines,
                         infused teas, and soaps. We have something for everyone!

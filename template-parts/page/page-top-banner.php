@@ -13,7 +13,7 @@
                     echo 'Blog';
                 }
                 else if(is_post_type_archive()) {
-                    echo post_type_archive_title( '', false );
+                    echo 'Natural Teas';
                 }
                 else if(is_taxonomy('family')) {
                     echo single_term_title();
@@ -27,9 +27,8 @@
         </div>
     </div>
 </div>
-<section class="icon-row">
+<!-- <section class="icon-row">
     <div class="container">
-        <?php echo get_template_part('template-parts/icon', 'row'); ?>
     </div>
-</section>
+</section> -->
 <?php endif; ?>
