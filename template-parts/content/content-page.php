@@ -28,7 +28,7 @@
             get_sidebar();
             echo "<div class=\"content page-content\">";
             if(get_field('custom_h1')) :
-                echo  '<h1>' . get_field('custom_h1', $pageid) . '</h1>';
+                echo  get_field('custom_h1', $pageid);
             else :
                 echo '<h1>' . get_the_title() . '</h1>';
             endif;
