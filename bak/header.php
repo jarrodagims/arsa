@@ -72,47 +72,47 @@ Made Easy - StatCounter" href="https:/statcounter.com/" target="_blank"><img cla
 StatCounter"></a></div>
     </noscript>
     <!-- End of Statcounter Code -->
-
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Arsa Distributing Inc",
-        "image": "https://www.arsaimports.com/wp-content/themes/arsa2/img/logo.png",
-        "@id": "",
-        "url": "https://www.arsaimports.com/",
-        "telephone": "(915) 842-9676",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "500 W Overland Ave Ste 250N",
-            "addressLocality": "El Paso",
-            "addressRegion": "TX",
-            "postalCode": "79901",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 31.7553378,
-            "longitude": -106.4931378
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-            ],
-            "opens": "08:00",
-            "closes": "17:00"
-        },
-        "sameAs": [
-            "https://www.facebook.com/Arsa-Distributing-Inc-466836930388926/",
-            "https://twitter.com/AllNatural_Arsa"
-        ]
-    }
-    </script>
+	
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Arsa Distributing Inc",
+  "image": "https://www.arsaimports.com/wp-content/themes/arsa2/img/logo.png",
+  "@id": "",
+  "url": "https://www.arsaimports.com/",
+  "telephone": "(915) 842-9676",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "500 W Overland Ave Ste 250N",
+    "addressLocality": "El Paso",
+    "addressRegion": "TX",
+    "postalCode": "79901",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.7553378,
+    "longitude": -106.4931378
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/Arsa-Distributing-Inc-466836930388926/",
+    "https://twitter.com/AllNatural_Arsa"
+  ]
+}
+</script>	
 
 </head>
 
@@ -136,7 +136,7 @@ StatCounter"></a></div>
                                 alt="<?php echo get_bloginfo(
             'description'
             ); ?>" /></a>
-                        <div class="navbar-right d-xl-none navbar-nav">
+                        <div class="navbar-right d-lg-flex navbar-nav">
                             <ul class="nav">
                                 <li class="nav-item menu-item directions">
                                     <a href="<?=SITEURL?>/contact-us/"><span
@@ -155,32 +155,6 @@ StatCounter"></a></div>
         ?>
                                 </li>
                                 <?php endif; ?>
-                            </ul>
-                        </div>
-                        <div class="navbar-right d-none d-xl-flex navbar-nav">
-                            <ul class="nav">
-
-                                <li>
-                                    <p><strong>Mon - Fri:</strong> 8am - 5pm<br />
-                                        <strong>Sat - Sun:</strong> Closed</p>
-                                </li>
-                                <li class="dir">
-                                    <p>500 W. Overland <span class="brand"><strong>Ste. 250-N</strong></span><br />
-                                        El Paso, Texas 79901</p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <a
-                                            href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span><strong>P:</strong>
-                                                <?php printPhone(); ?></span></a>
-                                        <a href="tel:9158429685"><span><strong>F:</strong>
-                                                (915) 842-9685</span></a>
-                                    </p>
-                                </li>
-
-                                <li><a href="<?=SITEURL?>/contact-us/">
-                                        <button class="btn btn-primary">CONTACT US</button>
-                                    </a></li>
                             </ul>
                         </div>
                     </div>

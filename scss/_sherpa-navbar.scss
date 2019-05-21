@@ -215,6 +215,7 @@
     margin-left: 27px;
     text-transform: none;
     color: #1A1A1A;
+    @include montserrat();
 
     &:first-child {
       border-right: 1px solid #989898;
@@ -231,12 +232,13 @@
 
     p {
       margin-bottom: 0;
+      font-size: 13px;
     }
 
     a {
       color: $sherpa-dark-color;
-      @include poppins();
       display: block;
+      font-weight: 500;
 
       
       &:hover {
