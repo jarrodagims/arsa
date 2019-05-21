@@ -95,7 +95,7 @@ StatCounter"></a></div>
                                 alt="<?php echo get_bloginfo(
             'description'
             ); ?>" /></a>
-                        <div class="navbar-right d-lg-flex navbar-nav">
+                        <div class="navbar-right d-xl-none navbar-nav">
                             <ul class="nav">
                                 <li class="nav-item menu-item directions">
                                     <a href="<?=SITEURL?>/contact-us/"><span
@@ -114,6 +114,30 @@ StatCounter"></a></div>
         ?>
                                 </li>
                                 <?php endif; ?>
+                            </ul>
+                        </div>
+                        <div class="navbar-right d-none d-xl-flex navbar-nav">
+                            <ul class="nav">
+
+                                <li>
+                                    <p><strong>Mon - Fri:</strong> 8am - 5pm<br />
+                                        <strong>Sat - Sun:</strong> Closed</p>
+                                </li>
+                                <li class="dir">
+                                    <p>500 W. Overland <span class="brand"><strong>Ste. 250-N</strong></span><br />
+                                        El Paso, Texas 79901</p>
+                                </li>
+                                <li>
+                                    <p><a href="tel:9158429676"><span><strong>P:</strong>
+                                                (915) 842-9676</span></a>
+                                        <a
+                                            href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span><strong>P:</strong>
+                                                <?php printPhone(); ?></span></a></p>
+                                </li>
+
+                                <li><a href="<?=SITEURL?>/contact-us/">
+                                        <button class="btn btn-primary">CONTACT US</button>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
