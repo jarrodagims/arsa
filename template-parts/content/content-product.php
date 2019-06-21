@@ -33,7 +33,7 @@
                 <li><strong>CLASSIFICATION:</strong> <?php echo get_field('classification'); ?></li>
             </ul>
             <p>
-                <em><strong>About the Product:</strong></em> <?php the_content(); ?>
+                <?php the_content(); ?>
             </p>
 
             <ul>
